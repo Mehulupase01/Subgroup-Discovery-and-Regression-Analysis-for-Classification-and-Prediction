@@ -1,0 +1,3272 @@
+C:\Users\Mehul-PC\anaconda3\python.exe "D:\Cloud\OneDrive - Vishwaniketan Trust\Leiden University Workspace\Advances in Data Mining\PA-4\PA4_4017633.py" 
+         Attribute  Cardinality     Type  Enabled
+0              age           66  numeric     True
+1        workclass            7  nominal     True
+2           fnlwgt          987  numeric     True
+3        education           16  nominal     True
+4    education-num           16  numeric     True
+5   marital-status            7  nominal     True
+6       occupation           15  nominal     True
+7     relationship            6  nominal     True
+8             race            5  nominal     True
+9              sex            2  nominal     True
+10    capital-gain           36  numeric     True
+11    capital-loss           30  numeric     True
+12  hours-per-week           56  numeric     True
+13  native-country           29  nominal     True
+14          target            2  nominal     True
+
+
+******* Section 1 *******
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+search_parameters
+	quality_measure = Cortana Quality
+	quality_measure_minimum = 0.1
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+
+search_parameters
+	quality_measure = Cortana Quality
+	quality_measure_minimum = 0.1
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	age <=
+	age >=
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate age <= 23.0 size: 149
+  subgroup nr. 0; quality -0.1940104216337204
+candidate age <= 28.0 size: 272
+  subgroup nr. 1; quality -0.3261045217514038
+candidate age <= 32.0 size: 384
+  subgroup nr. 2; quality -0.3540768623352051
+candidate age <= 36.0 size: 502
+  subgroup nr. 3; quality -0.33373743295669556
+candidate age <= 42.0 size: 649
+  subgroup nr. 4; quality -0.17156070470809937
+candidate age <= 46.0 size: 753
+  subgroup nr. 5; quality -0.12176723778247833
+candidate age <= 54.0 size: 875
+  subgroup nr. 6; quality -0.03367456793785095
+candidate age >= 24.0 size: 851
+  subgroup nr. 7; quality 0.1940104216337204
+candidate age >= 29.0 size: 728
+  subgroup nr. 8; quality 0.3261045217514038
+candidate age >= 33.0 size: 616
+  subgroup nr. 9; quality 0.3540768623352051
+candidate age >= 37.0 size: 498
+  subgroup nr. 10; quality 0.33373743295669556
+candidate age >= 43.0 size: 351
+  subgroup nr. 11; quality 0.17156070470809937
+candidate age >= 47.0 size: 247
+  subgroup nr. 12; quality 0.12176723778247833
+candidate age >= 55.0 size: 125
+  subgroup nr. 13; quality 0.03367456793785095
+candidate workclass = 'Private' size: 698
+  subgroup nr. 14; quality -0.05576508492231369
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 15; quality -0.028062140569090843
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 16; quality -0.028062140569090843
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 17; quality -0.016837283968925476
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 18; quality -0.022449713200330734
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 19; quality -0.0056124283000826836
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 20; quality 0.03367456793785095
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 21; quality 0.016837283968925476
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 22; quality 0.028062140569090843
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 23; quality 0.028062140569090843
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 24; quality 0.016837283968925476
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 25; quality 0.022449713200330734
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 26; quality 0.0056124283000826836
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 27; quality -0.03367456793785095
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 28; quality -0.016837283968925476
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 29; quality 0.19356141984462738
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 30; quality -0.14295977354049683
+candidate education = 'Some-college' size: 225
+  subgroup nr. 31; quality -0.09653376787900925
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 32; quality -0.12046515941619873
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 33; quality -0.26342493295669556
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 34; quality -0.359958678483963
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 35; quality -0.3501706123352051
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 37; quality 0.12046515941619873
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 38; quality 0.26342493295669556
+candidate education-num >= 11.0 size: 327
+  subgroup nr. 39; quality 0.359958678483963
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 40; quality 0.34949713945388794
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 41; quality 0.3501706123352051
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 42; quality -0.35811781883239746
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 43; quality 0.5176005959510803
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 44; quality -0.08728448301553726
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 45; quality 0.22018678486347198
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 46; quality 0.12477550655603409
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 47; quality -0.1112607792019844
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 48; quality -0.0055226292461156845
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 49; quality -0.018139367923140526
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 50; quality -0.21174569427967072
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 51; quality 0.45330458879470825
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 52; quality -0.18538972735404968
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 53; quality -0.09702765941619873
+candidate race = 'White' size: 847
+  subgroup nr. 54; quality 0.058908045291900635
+candidate race = 'Black' size: 110
+  subgroup nr. 55; quality -0.0758800283074379
+candidate sex = 'Male' size: 671
+  subgroup nr. 56; quality 0.1982758641242981
+candidate sex = 'Female' size: 329
+  subgroup nr. 57; quality -0.1982758641242981
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 60; quality -0.1503232717514038
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 61; quality -0.23204022645950317
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 62; quality -0.20541487634181976
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 63; quality -0.10461565852165222
+candidate hours-per-week >= 26.0 size: 863
+  subgroup nr. 64; quality 0.1503232717514038
+candidate hours-per-week >= 41.0 size: 283
+  subgroup nr. 65; quality 0.23204022645950317
+candidate hours-per-week >= 42.0 size: 282
+  subgroup nr. 66; quality 0.23334231972694397
+candidate hours-per-week >= 43.0 size: 268
+  subgroup nr. 67; quality 0.2347341924905777
+candidate hours-per-week >= 44.0 size: 265
+  subgroup nr. 68; quality 0.23302802443504333
+candidate hours-per-week >= 46.0 size: 200
+  subgroup nr. 69; quality 0.20541487634181976
+candidate hours-per-week >= 52.0 size: 105
+  subgroup nr. 70; quality 0.10461565852165222
+Raw result set size: 24
+Filtered result set size: 16
+Mining process finished in 0 minutes and 0.099 seconds.
+   16 subgroups found.
+
+number of candidates: 72
+number of subgroups : 16
+CCSUM=3999	N=1000	CCEXPECTED=3.999000	CR(10)=0.533410	H(10)=5.239884
+CCSUM=7547	N=1000	CCEXPECTED=7.547000	CR(100)=0.376391	H(100)=7.206911
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+1       1       376  ...      NaN               relationship = 'Husband'
+2       1       327  ...      NaN                  education-num >= 11.0
+3       1       616  ...      NaN                            age >= 33.0
+4       1       728  ...      NaN                            age >= 29.0
+5       1       552  ...      NaN                  education-num >= 10.0
+6       1       268  ...      NaN                 hours-per-week >= 43.0
+7       1       282  ...      NaN                 hours-per-week >= 42.0
+8       1       283  ...      NaN                 hours-per-week >= 41.0
+9       1       124  ...      NaN         occupation = 'Exec-managerial'
+10      1       671  ...      NaN                           sex = 'Male'
+11      1       851  ...      NaN                            age >= 24.0
+12      1       166  ...      NaN                education = 'Bachelors'
+13      1       863  ...      NaN                 hours-per-week >= 26.0
+14      1       124  ...      NaN          occupation = 'Prof-specialty'
+15      1       873  ...      NaN                   education-num >= 9.0
+
+[16 rows x 7 columns]
+
+
+******* Section 2 *******
+
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+
+search_parameters
+	quality_measure = Cortana Quality
+	quality_measure_minimum = 0.1
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	age <=
+	age >=
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate age <= 23.0 size: 149
+  subgroup nr. 0; quality -0.1940104216337204
+candidate age <= 28.0 size: 272
+  subgroup nr. 1; quality -0.3261045217514038
+candidate age <= 32.0 size: 384
+  subgroup nr. 2; quality -0.3540768623352051
+candidate age <= 36.0 size: 502
+  subgroup nr. 3; quality -0.33373743295669556
+candidate age <= 42.0 size: 649
+  subgroup nr. 4; quality -0.17156070470809937
+candidate age <= 46.0 size: 753
+  subgroup nr. 5; quality -0.12176723778247833
+candidate age <= 54.0 size: 875
+  subgroup nr. 6; quality -0.03367456793785095
+candidate age >= 24.0 size: 851
+  subgroup nr. 7; quality 0.1940104216337204
+candidate age >= 29.0 size: 728
+  subgroup nr. 8; quality 0.3261045217514038
+candidate age >= 33.0 size: 616
+  subgroup nr. 9; quality 0.3540768623352051
+candidate age >= 37.0 size: 498
+  subgroup nr. 10; quality 0.33373743295669556
+candidate age >= 43.0 size: 351
+  subgroup nr. 11; quality 0.17156070470809937
+candidate age >= 47.0 size: 247
+  subgroup nr. 12; quality 0.12176723778247833
+candidate age >= 55.0 size: 125
+  subgroup nr. 13; quality 0.03367456793785095
+candidate workclass = 'Private' size: 698
+  subgroup nr. 14; quality -0.05576508492231369
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 15; quality -0.028062140569090843
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 16; quality -0.028062140569090843
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 17; quality -0.016837283968925476
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 18; quality -0.022449713200330734
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 19; quality -0.0056124283000826836
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 20; quality 0.03367456793785095
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 21; quality 0.016837283968925476
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 22; quality 0.028062140569090843
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 23; quality 0.028062140569090843
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 24; quality 0.016837283968925476
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 25; quality 0.022449713200330734
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 26; quality 0.0056124283000826836
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 27; quality -0.03367456793785095
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 28; quality -0.016837283968925476
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 29; quality 0.19356141984462738
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 30; quality -0.14295977354049683
+candidate education = 'Some-college' size: 225
+  subgroup nr. 31; quality -0.09653376787900925
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 32; quality -0.12046515941619873
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 33; quality -0.26342493295669556
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 34; quality -0.359958678483963
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 35; quality -0.3501706123352051
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 37; quality 0.12046515941619873
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 38; quality 0.26342493295669556
+candidate education-num >= 11.0 size: 327
+  subgroup nr. 39; quality 0.359958678483963
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 40; quality 0.34949713945388794
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 41; quality 0.3501706123352051
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 42; quality -0.35811781883239746
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 43; quality 0.5176005959510803
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 44; quality -0.08728448301553726
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 45; quality 0.22018678486347198
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 46; quality 0.12477550655603409
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 47; quality -0.1112607792019844
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 48; quality -0.0055226292461156845
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 49; quality -0.018139367923140526
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 50; quality -0.21174569427967072
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 51; quality 0.45330458879470825
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 52; quality -0.18538972735404968
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 53; quality -0.09702765941619873
+candidate race = 'White' size: 847
+  subgroup nr. 54; quality 0.058908045291900635
+candidate race = 'Black' size: 110
+  subgroup nr. 55; quality -0.0758800283074379
+candidate sex = 'Male' size: 671
+  subgroup nr. 56; quality 0.1982758641242981
+candidate sex = 'Female' size: 329
+  subgroup nr. 57; quality -0.1982758641242981
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 60; quality -0.1503232717514038
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 61; quality -0.23204022645950317
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 62; quality -0.20541487634181976
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 63; quality -0.10461565852165222
+candidate hours-per-week >= 26.0 size: 863
+  subgroup nr. 64; quality 0.1503232717514038
+candidate hours-per-week >= 41.0 size: 283
+  subgroup nr. 65; quality 0.23204022645950317
+candidate hours-per-week >= 42.0 size: 282
+  subgroup nr. 66; quality 0.23334231972694397
+candidate hours-per-week >= 43.0 size: 268
+  subgroup nr. 67; quality 0.2347341924905777
+candidate hours-per-week >= 44.0 size: 265
+  subgroup nr. 68; quality 0.23302802443504333
+candidate hours-per-week >= 46.0 size: 200
+  subgroup nr. 69; quality 0.20541487634181976
+candidate hours-per-week >= 52.0 size: 105
+  subgroup nr. 70; quality 0.10461565852165222
+Raw result set size: 24
+Filtered result set size: 16
+Mining process finished in 0 minutes and 0.026 seconds.
+   16 subgroups found.
+
+number of candidates: 72
+number of subgroups : 16
+CCSUM=3999	N=1000	CCEXPECTED=3.999000	CR(10)=0.533410	H(10)=5.239884
+CCSUM=7547	N=1000	CCEXPECTED=7.547000	CR(100)=0.376391	H(100)=7.206911
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+1       1       376  ...      NaN               relationship = 'Husband'
+2       1       327  ...      NaN                  education-num >= 11.0
+3       1       616  ...      NaN                            age >= 33.0
+4       1       728  ...      NaN                            age >= 29.0
+5       1       552  ...      NaN                  education-num >= 10.0
+6       1       268  ...      NaN                 hours-per-week >= 43.0
+7       1       282  ...      NaN                 hours-per-week >= 42.0
+8       1       283  ...      NaN                 hours-per-week >= 41.0
+9       1       124  ...      NaN         occupation = 'Exec-managerial'
+10      1       671  ...      NaN                           sex = 'Male'
+11      1       851  ...      NaN                            age >= 24.0
+12      1       166  ...      NaN                education = 'Bachelors'
+13      1       863  ...      NaN                 hours-per-week >= 26.0
+14      1       124  ...      NaN          occupation = 'Prof-specialty'
+15      1       873  ...      NaN                   education-num >= 9.0
+
+[16 rows x 7 columns]
+
+
+******* Section 3 *******
+
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+
+search_parameters
+	quality_measure = Cortana Quality
+	quality_measure_minimum = 0.25
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	age <=
+	age >=
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate age <= 23.0 size: 149
+  subgroup nr. 0; quality -0.1940104216337204
+candidate age <= 28.0 size: 272
+  subgroup nr. 1; quality -0.3261045217514038
+candidate age <= 32.0 size: 384
+  subgroup nr. 2; quality -0.3540768623352051
+candidate age <= 36.0 size: 502
+  subgroup nr. 3; quality -0.33373743295669556
+candidate age <= 42.0 size: 649
+  subgroup nr. 4; quality -0.17156070470809937
+candidate age <= 46.0 size: 753
+  subgroup nr. 5; quality -0.12176723778247833
+candidate age <= 54.0 size: 875
+  subgroup nr. 6; quality -0.03367456793785095
+candidate age >= 24.0 size: 851
+  subgroup nr. 7; quality 0.1940104216337204
+candidate age >= 29.0 size: 728
+  subgroup nr. 8; quality 0.3261045217514038
+candidate age >= 33.0 size: 616
+  subgroup nr. 9; quality 0.3540768623352051
+candidate age >= 37.0 size: 498
+  subgroup nr. 10; quality 0.33373743295669556
+candidate age >= 43.0 size: 351
+  subgroup nr. 11; quality 0.17156070470809937
+candidate age >= 47.0 size: 247
+  subgroup nr. 12; quality 0.12176723778247833
+candidate age >= 55.0 size: 125
+  subgroup nr. 13; quality 0.03367456793785095
+candidate workclass = 'Private' size: 698
+  subgroup nr. 14; quality -0.05576508492231369
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 15; quality -0.028062140569090843
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 16; quality -0.028062140569090843
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 17; quality -0.016837283968925476
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 18; quality -0.022449713200330734
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 19; quality -0.0056124283000826836
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 20; quality 0.03367456793785095
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 21; quality 0.016837283968925476
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 22; quality 0.028062140569090843
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 23; quality 0.028062140569090843
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 24; quality 0.016837283968925476
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 25; quality 0.022449713200330734
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 26; quality 0.0056124283000826836
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 27; quality -0.03367456793785095
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 28; quality -0.016837283968925476
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 29; quality 0.19356141984462738
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 30; quality -0.14295977354049683
+candidate education = 'Some-college' size: 225
+  subgroup nr. 31; quality -0.09653376787900925
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 32; quality -0.12046515941619873
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 33; quality -0.26342493295669556
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 34; quality -0.359958678483963
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 35; quality -0.3501706123352051
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 37; quality 0.12046515941619873
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 38; quality 0.26342493295669556
+candidate education-num >= 11.0 size: 327
+  subgroup nr. 39; quality 0.359958678483963
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 40; quality 0.34949713945388794
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 41; quality 0.3501706123352051
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 42; quality -0.35811781883239746
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 43; quality 0.5176005959510803
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 44; quality -0.08728448301553726
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 45; quality 0.22018678486347198
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 46; quality 0.12477550655603409
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 47; quality -0.1112607792019844
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 48; quality -0.0055226292461156845
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 49; quality -0.018139367923140526
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 50; quality -0.21174569427967072
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 51; quality 0.45330458879470825
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 52; quality -0.18538972735404968
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 53; quality -0.09702765941619873
+candidate race = 'White' size: 847
+  subgroup nr. 54; quality 0.058908045291900635
+candidate race = 'Black' size: 110
+  subgroup nr. 55; quality -0.0758800283074379
+candidate sex = 'Male' size: 671
+  subgroup nr. 56; quality 0.1982758641242981
+candidate sex = 'Female' size: 329
+  subgroup nr. 57; quality -0.1982758641242981
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 60; quality -0.1503232717514038
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 61; quality -0.23204022645950317
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 62; quality -0.20541487634181976
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 63; quality -0.10461565852165222
+candidate hours-per-week >= 26.0 size: 863
+  subgroup nr. 64; quality 0.1503232717514038
+candidate hours-per-week >= 41.0 size: 283
+  subgroup nr. 65; quality 0.23204022645950317
+candidate hours-per-week >= 42.0 size: 282
+  subgroup nr. 66; quality 0.23334231972694397
+candidate hours-per-week >= 43.0 size: 268
+  subgroup nr. 67; quality 0.2347341924905777
+candidate hours-per-week >= 44.0 size: 265
+  subgroup nr. 68; quality 0.23302802443504333
+candidate hours-per-week >= 46.0 size: 200
+  subgroup nr. 69; quality 0.20541487634181976
+candidate hours-per-week >= 52.0 size: 105
+  subgroup nr. 70; quality 0.10461565852165222
+Raw result set size: 9
+Filtered result set size: 6
+Mining process finished in 0 minutes and 0.008 seconds.
+   6 subgroups found.
+
+number of candidates: 72
+number of subgroups : 6
+CCSUM=3042	N=1000	CCEXPECTED=3.042000	CR(10)=0.498776	H(10)=3.945199
+CCSUM=3042	N=1000	CCEXPECTED=3.042000	CR(100)=0.498776	H(100)=3.945199
+   Depth  Coverage  ...  p-Value                             Conditions
+0      1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+1      1       376  ...      NaN               relationship = 'Husband'
+2      1       327  ...      NaN                  education-num >= 11.0
+3      1       616  ...      NaN                            age >= 33.0
+4      1       728  ...      NaN                            age >= 29.0
+5      1       552  ...      NaN                  education-num >= 10.0
+
+[6 rows x 7 columns]
+
+
+******* Section 4 *******
+
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+
+search_parameters
+	quality_measure = Cortana Quality
+	quality_measure_minimum = 0.1
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = false
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	age <=
+	age >=
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate age <= 23.0 size: 149
+  subgroup nr. 0; quality -0.1940104216337204
+candidate age <= 28.0 size: 272
+  subgroup nr. 1; quality -0.3261045217514038
+candidate age <= 32.0 size: 384
+  subgroup nr. 2; quality -0.3540768623352051
+candidate age <= 36.0 size: 502
+  subgroup nr. 3; quality -0.33373743295669556
+candidate age <= 42.0 size: 649
+  subgroup nr. 4; quality -0.17156070470809937
+candidate age <= 46.0 size: 753
+  subgroup nr. 5; quality -0.12176723778247833
+candidate age <= 54.0 size: 875
+  subgroup nr. 6; quality -0.03367456793785095
+candidate age >= 24.0 size: 851
+  subgroup nr. 7; quality 0.1940104216337204
+candidate age >= 29.0 size: 728
+  subgroup nr. 8; quality 0.3261045217514038
+candidate age >= 33.0 size: 616
+  subgroup nr. 9; quality 0.3540768623352051
+candidate age >= 37.0 size: 498
+  subgroup nr. 10; quality 0.33373743295669556
+candidate age >= 43.0 size: 351
+  subgroup nr. 11; quality 0.17156070470809937
+candidate age >= 47.0 size: 247
+  subgroup nr. 12; quality 0.12176723778247833
+candidate age >= 55.0 size: 125
+  subgroup nr. 13; quality 0.03367456793785095
+candidate workclass = 'Private' size: 698
+  subgroup nr. 14; quality -0.05576508492231369
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 15; quality -0.028062140569090843
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 16; quality -0.028062140569090843
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 17; quality -0.016837283968925476
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 18; quality -0.022449713200330734
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 19; quality -0.0056124283000826836
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 20; quality 0.03367456793785095
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 21; quality 0.016837283968925476
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 22; quality 0.028062140569090843
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 23; quality 0.028062140569090843
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 24; quality 0.016837283968925476
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 25; quality 0.022449713200330734
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 26; quality 0.0056124283000826836
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 27; quality -0.03367456793785095
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 28; quality -0.016837283968925476
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 29; quality 0.19356141984462738
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 30; quality -0.14295977354049683
+candidate education = 'Some-college' size: 225
+  subgroup nr. 31; quality -0.09653376787900925
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 32; quality -0.12046515941619873
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 33; quality -0.26342493295669556
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 34; quality -0.359958678483963
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 35; quality -0.3501706123352051
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 37; quality 0.12046515941619873
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 38; quality 0.26342493295669556
+candidate education-num >= 11.0 size: 327
+  subgroup nr. 39; quality 0.359958678483963
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 40; quality 0.34949713945388794
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 41; quality 0.3501706123352051
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 42; quality -0.35811781883239746
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 43; quality 0.5176005959510803
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 44; quality -0.08728448301553726
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 45; quality 0.22018678486347198
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 46; quality 0.12477550655603409
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 47; quality -0.1112607792019844
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 48; quality -0.0055226292461156845
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 49; quality -0.018139367923140526
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 50; quality -0.21174569427967072
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 51; quality 0.45330458879470825
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 52; quality -0.18538972735404968
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 53; quality -0.09702765941619873
+candidate race = 'White' size: 847
+  subgroup nr. 54; quality 0.058908045291900635
+candidate race = 'Black' size: 110
+  subgroup nr. 55; quality -0.0758800283074379
+candidate sex = 'Male' size: 671
+  subgroup nr. 56; quality 0.1982758641242981
+candidate sex = 'Female' size: 329
+  subgroup nr. 57; quality -0.1982758641242981
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 60; quality -0.1503232717514038
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 61; quality -0.23204022645950317
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 62; quality -0.20541487634181976
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 63; quality -0.10461565852165222
+candidate hours-per-week >= 26.0 size: 863
+  subgroup nr. 64; quality 0.1503232717514038
+candidate hours-per-week >= 41.0 size: 283
+  subgroup nr. 65; quality 0.23204022645950317
+candidate hours-per-week >= 42.0 size: 282
+  subgroup nr. 66; quality 0.23334231972694397
+candidate hours-per-week >= 43.0 size: 268
+  subgroup nr. 67; quality 0.2347341924905777
+candidate hours-per-week >= 44.0 size: 265
+  subgroup nr. 68; quality 0.23302802443504333
+candidate hours-per-week >= 46.0 size: 200
+  subgroup nr. 69; quality 0.20541487634181976
+candidate hours-per-week >= 52.0 size: 105
+  subgroup nr. 70; quality 0.10461565852165222
+Mining process finished in 0 minutes and 0.024 seconds.
+   24 subgroups found.
+
+number of candidates: 72
+number of subgroups : 24
+CCSUM=4331	N=1000	CCEXPECTED=4.331000	CR(10)=0.529566	H(10)=5.427624
+CCSUM=9736	N=1000	CCEXPECTED=9.736000	CR(100)=0.431854	H(100)=8.308614
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+1       1       376  ...      NaN               relationship = 'Husband'
+2       1       327  ...      NaN                  education-num >= 11.0
+3       1       616  ...      NaN                            age >= 33.0
+4       1       244  ...      NaN                  education-num >= 13.0
+5       1       279  ...      NaN                  education-num >= 12.0
+6       1       498  ...      NaN                            age >= 37.0
+7       1       728  ...      NaN                            age >= 29.0
+8       1       552  ...      NaN                  education-num >= 10.0
+9       1       268  ...      NaN                 hours-per-week >= 43.0
+10      1       282  ...      NaN                 hours-per-week >= 42.0
+11      1       265  ...      NaN                 hours-per-week >= 44.0
+12      1       283  ...      NaN                 hours-per-week >= 41.0
+13      1       124  ...      NaN         occupation = 'Exec-managerial'
+14      1       200  ...      NaN                 hours-per-week >= 46.0
+15      1       671  ...      NaN                           sex = 'Male'
+16      1       851  ...      NaN                            age >= 24.0
+17      1       166  ...      NaN                education = 'Bachelors'
+18      1       351  ...      NaN                            age >= 43.0
+19      1       863  ...      NaN                 hours-per-week >= 26.0
+20      1       124  ...      NaN          occupation = 'Prof-specialty'
+21      1       247  ...      NaN                            age >= 47.0
+22      1       873  ...      NaN                   education-num >= 9.0
+23      1       105  ...      NaN                 hours-per-week >= 52.0
+
+[24 rows x 7 columns]
+Subgroup count with filtering turned ON:  6
+Subgroup count with filtering turned OFF:  24
+
+
+******* Section 5 *******
+
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+
+search_parameters
+	quality_measure = Relative Lift
+	quality_measure_minimum = 0.0
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	age <=
+	age >=
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate age <= 23.0 size: 149
+  subgroup nr. 0; quality -1.0
+candidate age <= 28.0 size: 272
+  subgroup nr. 1; quality -0.9207656979560852
+candidate age <= 32.0 size: 384
+  subgroup nr. 2; quality -0.7081537246704102
+candidate age <= 36.0 size: 502
+  subgroup nr. 3; quality -0.5105783939361572
+candidate age <= 42.0 size: 649
+  subgroup nr. 4; quality -0.20301790535449982
+candidate age <= 46.0 size: 753
+  subgroup nr. 5; quality -0.12419288605451584
+candidate age <= 54.0 size: 875
+  subgroup nr. 6; quality -0.029556650668382645
+candidate age >= 24.0 size: 851
+  subgroup nr. 7; quality 0.17508813738822937
+candidate age >= 29.0 size: 728
+  subgroup nr. 8; quality 0.34402236342430115
+candidate age >= 33.0 size: 616
+  subgroup nr. 9; quality 0.4414464831352234
+candidate age >= 37.0 size: 498
+  subgroup nr. 10; quality 0.5146794319152832
+candidate age >= 43.0 size: 351
+  subgroup nr. 11; quality 0.3753806948661804
+candidate age >= 47.0 size: 247
+  subgroup nr. 12; quality 0.37861230969429016
+candidate age >= 55.0 size: 125
+  subgroup nr. 13; quality 0.2068965584039688
+candidate workclass = 'Private' size: 698
+  subgroup nr. 14; quality -0.06135757267475128
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 15; quality -0.17241379618644714
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 16; quality -0.08620689809322357
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 17; quality -0.03448275849223137
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 18; quality -0.03448275849223137
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 19; quality -0.006896551698446274
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 20; quality 0.03448275849223137
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 21; quality 0.014778325334191322
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 22; quality 0.02463054098188877
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 23; quality 0.028735632076859474
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 24; quality 0.02068965509533882
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 25; quality 0.03448275849223137
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 26; quality 0.01149425283074379
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 27; quality -0.1034482792019844
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 28; quality -0.1034482792019844
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 29; quality 0.8955130577087402
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 30; quality -0.34203457832336426
+candidate education = 'Some-college' size: 225
+  subgroup nr. 31; quality -0.3295019268989563
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 32; quality -0.728482186794281
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 33; quality -0.451585590839386
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 34; quality -0.41077008843421936
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 35; quality -0.3557288944721222
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 37; quality 0.10597622394561768
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 38; quality 0.3665042519569397
+candidate education-num >= 11.0 size: 327
+  subgroup nr. 39; quality 0.8454075455665588
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 40; quality 0.962056577205658
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 41; quality 1.1021764278411865
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 42; quality -0.7995188236236572
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 43; quality 0.897330105304718
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 44; quality -0.4929006099700928
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 45; quality 1.3637374639511108
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 46; quality 0.7728031277656555
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 47; quality -0.7985820174217224
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 48; quality -0.03786945715546608
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 49; quality -0.11056376248598099
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 50; quality -0.582869827747345
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 51; quality 0.9258987307548523
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 52; quality -0.9429093599319458
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 53; quality -0.6836444139480591
+candidate race = 'White' size: 847
+  subgroup nr. 54; quality 0.053413670510053635
+candidate race = 'Black' size: 110
+  subgroup nr. 55; quality -0.5297805666923523
+candidate sex = 'Male' size: 671
+  subgroup nr. 56; quality 0.22693869471549988
+candidate sex = 'Female' size: 329
+  subgroup nr. 57; quality -0.462844580411911
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 60; quality -0.8426881432533264
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 61; quality -0.24854518473148346
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 62; quality -0.1971982717514038
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 63; quality -0.08977075666189194
+candidate hours-per-week >= 26.0 size: 863
+  subgroup nr. 64; quality 0.1337755173444748
+candidate hours-per-week >= 41.0 size: 283
+  subgroup nr. 65; quality 0.6297063231468201
+candidate hours-per-week >= 42.0 size: 282
+  subgroup nr. 66; quality 0.6354854702949524
+candidate hours-per-week >= 43.0 size: 268
+  subgroup nr. 67; quality 0.6726711392402649
+candidate hours-per-week >= 44.0 size: 265
+  subgroup nr. 68; quality 0.6753415465354919
+candidate hours-per-week >= 46.0 size: 200
+  subgroup nr. 69; quality 0.7887930870056152
+candidate hours-per-week >= 52.0 size: 105
+  subgroup nr. 70; quality 0.7651888132095337
+Raw result set size: 33
+Filtered result set size: 27
+Mining process finished in 0 minutes and 0.006 seconds.
+   27 subgroups found.
+
+number of candidates: 72
+number of subgroups : 27
+CCSUM=2548	N=1000	CCEXPECTED=2.548000	CR(10)=0.825309	H(10)=4.466007
+CCSUM=13630	N=1000	CCEXPECTED=13.630000	CR(100)=0.295172	H(100)=9.287724
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1       124  ...      NaN         occupation = 'Exec-managerial'
+1       1       244  ...      NaN                  education-num >= 13.0
+2       1       279  ...      NaN                  education-num >= 12.0
+3       1       376  ...      NaN               relationship = 'Husband'
+4       1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+5       1       166  ...      NaN                education = 'Bachelors'
+6       1       327  ...      NaN                  education-num >= 11.0
+7       1       200  ...      NaN                 hours-per-week >= 46.0
+8       1       124  ...      NaN          occupation = 'Prof-specialty'
+9       1       265  ...      NaN                 hours-per-week >= 44.0
+10      1       268  ...      NaN                 hours-per-week >= 43.0
+11      1       282  ...      NaN                 hours-per-week >= 42.0
+12      1       283  ...      NaN                 hours-per-week >= 41.0
+13      1       498  ...      NaN                            age >= 37.0
+14      1       616  ...      NaN                            age >= 33.0
+15      1       552  ...      NaN                  education-num >= 10.0
+16      1       728  ...      NaN                            age >= 29.0
+17      1       671  ...      NaN                           sex = 'Male'
+18      1       851  ...      NaN                            age >= 24.0
+19      1       863  ...      NaN                 hours-per-week >= 26.0
+20      1       873  ...      NaN                   education-num >= 9.0
+21      1       847  ...      NaN                         race = 'White'
+22      1       750  ...      NaN                     fnlwgt <= 247019.0
+23      1       500  ...      NaN                     fnlwgt >= 180609.0
+24      1       750  ...      NaN                     fnlwgt >= 115076.0
+25      1       875  ...      NaN                      fnlwgt >= 83082.0
+26      1       875  ...      NaN                     fnlwgt <= 304873.0
+
+[27 rows x 7 columns]
+
+
+******* Section 6 *******
+
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single nominal
+	primary_target = target
+	target_value = gr50K
+
+search_parameters
+	quality_measure = Relative Lift
+	quality_measure_minimum = 0.0
+	search_depth = 1
+	minimum_coverage = 5
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	age <=
+	age >=
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate age <= 23.0 size: 149
+  subgroup nr. 0; quality -1.0
+candidate age <= 28.0 size: 272
+  subgroup nr. 1; quality -0.9207656979560852
+candidate age <= 32.0 size: 384
+  subgroup nr. 2; quality -0.7081537246704102
+candidate age <= 36.0 size: 502
+  subgroup nr. 3; quality -0.5105783939361572
+candidate age <= 42.0 size: 649
+  subgroup nr. 4; quality -0.20301790535449982
+candidate age <= 46.0 size: 753
+  subgroup nr. 5; quality -0.12419288605451584
+candidate age <= 54.0 size: 875
+  subgroup nr. 6; quality -0.029556650668382645
+candidate age >= 24.0 size: 851
+  subgroup nr. 7; quality 0.17508813738822937
+candidate age >= 29.0 size: 728
+  subgroup nr. 8; quality 0.34402236342430115
+candidate age >= 33.0 size: 616
+  subgroup nr. 9; quality 0.4414464831352234
+candidate age >= 37.0 size: 498
+  subgroup nr. 10; quality 0.5146794319152832
+candidate age >= 43.0 size: 351
+  subgroup nr. 11; quality 0.3753806948661804
+candidate age >= 47.0 size: 247
+  subgroup nr. 12; quality 0.37861230969429016
+candidate age >= 55.0 size: 125
+  subgroup nr. 13; quality 0.2068965584039688
+candidate workclass = 'State-gov' size: 37
+  subgroup nr. 14; quality 0.6309412717819214
+candidate workclass = 'Self-emp-not-inc' size: 81
+  subgroup nr. 15; quality 0.011068539693951607
+candidate workclass = 'Private' size: 698
+  subgroup nr. 16; quality -0.06135757267475128
+candidate workclass = 'Federal-gov' size: 21
+  subgroup nr. 17; quality 1.2577996253967285
+candidate workclass = 'Local-gov' size: 68
+  subgroup nr. 18; quality -0.23935091495513916
+candidate workclass = '?' size: 62
+  subgroup nr. 19; quality -0.6523915529251099
+candidate workclass = 'Self-emp-inc' size: 33
+  subgroup nr. 20; quality 1.4817136526107788
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 21; quality -0.17241379618644714
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 22; quality -0.08620689809322357
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 23; quality -0.03448275849223137
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 24; quality -0.03448275849223137
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 25; quality -0.006896551698446274
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 26; quality 0.03448275849223137
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 27; quality 0.014778325334191322
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 28; quality 0.02463054098188877
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 29; quality 0.028735632076859474
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 30; quality 0.02068965509533882
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 31; quality 0.03448275849223137
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 32; quality 0.01149425283074379
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 33; quality -0.1034482792019844
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 34; quality -0.1034482792019844
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 35; quality 0.8955130577087402
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 36; quality -0.34203457832336426
+candidate education = '11th' size: 46
+  subgroup nr. 37; quality -0.8125936985015869
+candidate education = 'Masters' size: 54
+  subgroup nr. 38; quality 0.9157088398933411
+candidate education = '9th' size: 16
+  subgroup nr. 39; quality -1.0
+candidate education = 'Some-college' size: 225
+  subgroup nr. 40; quality -0.3295019268989563
+candidate education = 'Assoc-acdm' size: 35
+  subgroup nr. 41; quality -0.014778325334191322
+candidate education = 'Assoc-voc' size: 48
+  subgroup nr. 42; quality 0.1673850566148758
+candidate education = '7th-8th' size: 15
+  subgroup nr. 43; quality -0.13793103396892548
+candidate education = 'Doctorate' size: 14
+  subgroup nr. 44; quality 2.6945812702178955
+candidate education = 'Prof-school' size: 10
+  subgroup nr. 45; quality 3.310344934463501
+candidate education = '5th-6th' size: 11
+  subgroup nr. 46; quality -1.0
+candidate education = '10th' size: 21
+  subgroup nr. 47; quality -0.7947455048561096
+candidate education = '1st-4th' size: 7
+  subgroup nr. 48; quality -1.0
+candidate education = '12th' size: 9
+  subgroup nr. 49; quality -0.04214559495449066
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 50; quality -0.728482186794281
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 51; quality -0.451585590839386
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 52; quality -0.41077008843421936
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 53; quality -0.3557288944721222
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 55; quality 0.10597622394561768
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 56; quality 0.3665042519569397
+candidate education-num >= 11.0 size: 327
+  subgroup nr. 57; quality 0.8454075455665588
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 58; quality 0.962056577205658
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 59; quality 1.1021764278411865
+candidate education-num >= 14.0 size: 78
+  subgroup nr. 60; quality 1.541998267173767
+candidate education-num >= 15.0 size: 24
+  subgroup nr. 61; quality 2.9511494636535645
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 62; quality -0.7995188236236572
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 63; quality 0.897330105304718
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 64; quality -0.4929006099700928
+candidate marital-status = 'Married-spouse-absent' size: 15
+  subgroup nr. 65; quality -1.0
+candidate marital-status = 'Separated' size: 28
+  subgroup nr. 66; quality -0.8460590839385986
+candidate marital-status = 'Widowed' size: 33
+  subgroup nr. 67; quality -0.4775339663028717
+candidate occupation = 'Adm-clerical' size: 94
+  subgroup nr. 68; quality -0.3580337464809418
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 69; quality 1.3637374639511108
+candidate occupation = 'Handlers-cleaners' size: 43
+  subgroup nr. 70; quality -0.8997594118118286
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 71; quality 0.7728031277656555
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 72; quality -0.7985820174217224
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 73; quality -0.03786945715546608
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 74; quality -0.11056376248598099
+candidate occupation = 'Transport-moving' size: 52
+  subgroup nr. 75; quality -0.336870014667511
+candidate occupation = 'Farming-fishing' size: 31
+  subgroup nr. 76; quality -0.44382646679878235
+candidate occupation = 'Machine-op-inspct' size: 61
+  subgroup nr. 77; quality -0.4347088634967804
+candidate occupation = 'Tech-support' size: 44
+  subgroup nr. 78; quality 0.17554858326911926
+candidate occupation = '?' size: 62
+  subgroup nr. 79; quality -0.6523915529251099
+candidate occupation = 'Protective-serv' size: 16
+  subgroup nr. 80; quality 0.3469827473163605
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 81; quality -0.582869827747345
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 82; quality 0.9258987307548523
+candidate relationship = 'Wife' size: 61
+  subgroup nr. 83; quality 0.7665347456932068
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 84; quality -0.9429093599319458
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 85; quality -0.6836444139480591
+candidate relationship = 'Other-relative' size: 24
+  subgroup nr. 86; quality -0.6408045887947083
+candidate race = 'White' size: 847
+  subgroup nr. 87; quality 0.053413670510053635
+candidate race = 'Black' size: 110
+  subgroup nr. 88; quality -0.5297805666923523
+candidate race = 'Asian-Pac-Islander' size: 27
+  subgroup nr. 89; quality 0.9157088398933411
+candidate race = 'Amer-Indian-Eskimo' size: 10
+  subgroup nr. 90; quality -1.0
+candidate race = 'Other' size: 6
+  subgroup nr. 91; quality -0.2816092073917389
+candidate sex = 'Male' size: 671
+  subgroup nr. 92; quality 0.22693869471549988
+candidate sex = 'Female' size: 329
+  subgroup nr. 93; quality -0.462844580411911
+candidate capital-gain >= 594.0 size: 81
+  subgroup nr. 95; quality 1.3946360349655151
+candidate capital-gain >= 1055.0 size: 78
+  subgroup nr. 96; quality 1.4867373704910278
+candidate capital-gain >= 1111.0 size: 75
+  subgroup nr. 97; quality 1.5862069129943848
+candidate capital-gain >= 1409.0 size: 74
+  subgroup nr. 98; quality 1.6211556196212769
+candidate capital-gain >= 2050.0 size: 73
+  subgroup nr. 99; quality 1.6570619344711304
+candidate capital-gain >= 2174.0 size: 72
+  subgroup nr. 100; quality 1.6939655542373657
+candidate capital-gain >= 2176.0 size: 68
+  subgroup nr. 101; quality 1.8524340391159058
+candidate capital-loss >= 653.0 size: 50
+  subgroup nr. 103; quality 0.8965517282485962
+candidate capital-loss >= 1340.0 size: 49
+  subgroup nr. 104; quality 0.8472906351089478
+candidate capital-loss >= 1380.0 size: 48
+  subgroup nr. 105; quality 0.8857758641242981
+candidate capital-loss >= 1408.0 size: 46
+  subgroup nr. 106; quality 0.9677661061286926
+candidate capital-loss >= 1485.0 size: 44
+  subgroup nr. 107; quality 1.057210087776184
+candidate capital-loss >= 1504.0 size: 43
+  subgroup nr. 108; quality 1.10505211353302
+candidate capital-loss >= 1564.0 size: 42
+  subgroup nr. 109; quality 1.1551724672317505
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 110; quality -0.8426881432533264
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 111; quality -0.24854518473148346
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 112; quality -0.1971982717514038
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 113; quality -0.08977075666189194
+candidate hours-per-week >= 26.0 size: 863
+  subgroup nr. 114; quality 0.1337755173444748
+candidate hours-per-week >= 41.0 size: 283
+  subgroup nr. 115; quality 0.6297063231468201
+candidate hours-per-week >= 42.0 size: 282
+  subgroup nr. 116; quality 0.6354854702949524
+candidate hours-per-week >= 43.0 size: 268
+  subgroup nr. 117; quality 0.6726711392402649
+candidate hours-per-week >= 44.0 size: 265
+  subgroup nr. 118; quality 0.6753415465354919
+candidate hours-per-week >= 46.0 size: 200
+  subgroup nr. 119; quality 0.7887930870056152
+candidate hours-per-week >= 52.0 size: 105
+  subgroup nr. 120; quality 0.7651888132095337
+candidate native-country = '?' size: 18
+  subgroup nr. 122; quality 0.4367816150188446
+candidate native-country = 'Mexico' size: 20
+  subgroup nr. 123; quality -0.7844827771186829
+Raw result set size: 62
+Filtered result set size: 54
+Mining process finished in 0 minutes and 0.010 seconds.
+   54 subgroups found.
+
+number of candidates: 124
+number of subgroups : 54
+CCSUM=566	N=1000	CCEXPECTED=0.566000	CR(10)=1.718000	H(10)=0.934791
+CCSUM=14942	N=1000	CCEXPECTED=14.942000	CR(100)=0.325120	H(100)=9.574599
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1        10  ...      NaN              education = 'Prof-school'
+1       1        24  ...      NaN                  education-num >= 15.0
+2       1        14  ...      NaN                education = 'Doctorate'
+3       1        68  ...      NaN                 capital-gain >= 2176.0
+4       1        72  ...      NaN                 capital-gain >= 2174.0
+5       1        73  ...      NaN                 capital-gain >= 2050.0
+6       1        74  ...      NaN                 capital-gain >= 1409.0
+7       1        75  ...      NaN                 capital-gain >= 1111.0
+8       1        78  ...      NaN                  education-num >= 14.0
+9       1        78  ...      NaN                 capital-gain >= 1055.0
+10      1        33  ...      NaN             workclass = 'Self-emp-inc'
+11      1        81  ...      NaN                  capital-gain >= 594.0
+12      1       124  ...      NaN         occupation = 'Exec-managerial'
+13      1        21  ...      NaN              workclass = 'Federal-gov'
+14      1        42  ...      NaN                 capital-loss >= 1564.0
+15      1        43  ...      NaN                 capital-loss >= 1504.0
+16      1       244  ...      NaN                  education-num >= 13.0
+17      1        44  ...      NaN                 capital-loss >= 1485.0
+18      1        46  ...      NaN                 capital-loss >= 1408.0
+19      1       279  ...      NaN                  education-num >= 12.0
+20      1       376  ...      NaN               relationship = 'Husband'
+21      1        54  ...      NaN                  education = 'Masters'
+22      1        27  ...      NaN            race = 'Asian-Pac-Islander'
+23      1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+24      1        50  ...      NaN                  capital-loss >= 653.0
+25      1       166  ...      NaN                education = 'Bachelors'
+26      1       327  ...      NaN                  education-num >= 11.0
+27      1       200  ...      NaN                 hours-per-week >= 46.0
+28      1       124  ...      NaN          occupation = 'Prof-specialty'
+29      1        61  ...      NaN                  relationship = 'Wife'
+30      1       265  ...      NaN                 hours-per-week >= 44.0
+31      1       268  ...      NaN                 hours-per-week >= 43.0
+32      1       282  ...      NaN                 hours-per-week >= 42.0
+33      1        37  ...      NaN                workclass = 'State-gov'
+34      1       283  ...      NaN                 hours-per-week >= 41.0
+35      1       498  ...      NaN                            age >= 37.0
+36      1       616  ...      NaN                            age >= 33.0
+37      1        18  ...      NaN                   native-country = '?'
+38      1       552  ...      NaN                  education-num >= 10.0
+39      1        16  ...      NaN         occupation = 'Protective-serv'
+40      1       728  ...      NaN                            age >= 29.0
+41      1       671  ...      NaN                           sex = 'Male'
+42      1        44  ...      NaN            occupation = 'Tech-support'
+43      1       851  ...      NaN                            age >= 24.0
+44      1        48  ...      NaN                education = 'Assoc-voc'
+45      1       863  ...      NaN                 hours-per-week >= 26.0
+46      1       873  ...      NaN                   education-num >= 9.0
+47      1       847  ...      NaN                         race = 'White'
+48      1       750  ...      NaN                     fnlwgt <= 247019.0
+49      1       500  ...      NaN                     fnlwgt >= 180609.0
+50      1       750  ...      NaN                     fnlwgt >= 115076.0
+51      1       875  ...      NaN                      fnlwgt >= 83082.0
+52      1       875  ...      NaN                     fnlwgt <= 304873.0
+53      1        81  ...      NaN         workclass = 'Self-emp-not-inc'
+
+[54 rows x 7 columns]
+
+
+******* Section 7 *******
+
+average: 38.051
+total: 38.050999
+subgroup (1000): 38.050999, 13.342805
+complement (0): NaN, NaN
+
+Min = 17.0
+Max = 90.0
+BinWidth = 0.073
+AbsoluteCount = 1000
+std_dev=13.349479675538191 iqr=18.0
+h=3.017914 lo=4.928344 hi=102.071656 range=97.143311 s=32.188894 k=1000 dx=0.097143
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single numeric
+	primary_target = age
+	target_value = null
+
+search_parameters
+	quality_measure = Z-Score
+	quality_measure_minimum = 0.0
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+	target =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate workclass = 'Private' size: 698
+  subgroup nr. 0; quality -3.5504984855651855
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 1; quality 1.8007138967514038
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 2; quality 1.992005467414856
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 3; quality 2.3293964862823486
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 4; quality 2.58585786819458
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 5; quality 2.122865915298462
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 6; quality 1.2280840873718262
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 7; quality 0.8902696967124939
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 8; quality -0.6806034445762634
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 9; quality -1.1500848531723022
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 10; quality -1.8043384552001953
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 11; quality -2.5858514308929443
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 12; quality -2.740607976913452
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 13; quality -2.1270949840545654
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 14; quality -2.355419397354126
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 15; quality -0.7298334836959839
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 16; quality 1.4834554195404053
+candidate education = 'Some-college' size: 225
+  subgroup nr. 17; quality -3.859630584716797
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 18; quality 0.7682797908782959
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 19; quality 1.6647614240646362
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 20; quality -0.8734028339385986
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 21; quality -0.8792133927345276
+candidate education-num >= 8.0 size: 882
+  subgroup nr. 23; quality -0.4491533935070038
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 24; quality -0.2930298447608948
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 25; quality -1.499756097793579
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 26; quality 1.161090612411499
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 27; quality 1.5476179122924805
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 28; quality -12.936984062194824
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 29; quality 7.205008029937744
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 30; quality 3.663590908050537
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 31; quality 3.046700954437256
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 32; quality 1.8756057024002075
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 33; quality -1.8436356782913208
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 34; quality -2.0021088123321533
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 35; quality 0.6314507126808167
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 36; quality -0.27472734451293945
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 37; quality 7.903417110443115
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 38; quality -12.977020263671875
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 39; quality 2.199817180633545
+candidate race = 'White' size: 847
+  subgroup nr. 40; quality -0.0288308784365654
+candidate race = 'Black' size: 110
+  subgroup nr. 41; quality 0.10283179581165314
+candidate sex = 'Male' size: 671
+  subgroup nr. 42; quality 1.6311802864074707
+candidate sex = 'Female' size: 329
+  subgroup nr. 43; quality -2.329502582550049
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 46; quality -1.9976924657821655
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 47; quality -1.3114911317825317
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 48; quality -1.1017707586288452
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 49; quality -0.5251956582069397
+candidate hours-per-week >= 25.0 size: 884
+  subgroup nr. 50; quality 0.3552144765853882
+candidate hours-per-week >= 40.0 size: 755
+  subgroup nr. 51; quality 1.3678785562515259
+candidate hours-per-week >= 45.0 size: 261
+  subgroup nr. 52; quality 1.9933679103851318
+candidate hours-per-week >= 50.0 size: 184
+  subgroup nr. 53; quality 2.0366597175598145
+candidate target = 'leq50K' size: 768
+  subgroup nr. 55; quality -3.475613594055176
+candidate target = 'gr50K' size: 232
+  subgroup nr. 56; quality 6.323667049407959
+Raw result set size: 26
+Filtered result set size: 22
+Mining process finished in 0 minutes and 0.012 seconds.
+   22 subgroups found.
+
+number of candidates: 57
+number of subgroups : 22
+CCSUM=2990	N=1000	CCEXPECTED=2.990000	CR(10)=0.517438	H(10)=5.449962
+CCSUM=8577	N=1000	CCEXPECTED=8.577000	CR(100)=0.281118	H(100)=8.980060
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1       376  ...      NaN               relationship = 'Husband'
+1       1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+2       1       232  ...      NaN                       target = 'gr50K'
+3       1       136  ...      NaN            marital-status = 'Divorced'
+4       1       124  ...      NaN         occupation = 'Exec-managerial'
+5       1       500  ...      NaN                     fnlwgt <= 180572.0
+6       1       109  ...      NaN             relationship = 'Unmarried'
+7       1       625  ...      NaN                     fnlwgt <= 201080.0
+8       1       184  ...      NaN                 hours-per-week >= 50.0
+9       1       261  ...      NaN                 hours-per-week >= 45.0
+10      1       124  ...      NaN          occupation = 'Prof-specialty'
+11      1       448  ...      NaN                   education-num <= 9.0
+12      1       671  ...      NaN                           sex = 'Male'
+13      1       244  ...      NaN                  education-num >= 13.0
+14      1       321  ...      NaN                  education = 'HS-grad'
+15      1       755  ...      NaN                 hours-per-week >= 40.0
+16      1       750  ...      NaN                     fnlwgt <= 247019.0
+17      1       279  ...      NaN                  education-num >= 12.0
+18      1       875  ...      NaN                     fnlwgt <= 304873.0
+19      1       126  ...      NaN            occupation = 'Craft-repair'
+20      1       884  ...      NaN                 hours-per-week >= 25.0
+21      1       110  ...      NaN                         race = 'Black'
+
+[22 rows x 7 columns]
+Average age in the dataset: 38.051
+
+
+******* Section 8 *******
+
+Skipping threshold computation due to lack of support in current library version.
+average: 38.051
+total: 38.050999
+subgroup (1000): 38.050999, 13.342805
+complement (0): NaN, NaN
+
+Min = 17.0
+Max = 90.0
+BinWidth = 0.073
+AbsoluteCount = 1000
+std_dev=13.349479675538191 iqr=18.0
+h=3.017914 lo=4.928344 hi=102.071656 range=97.143311 s=32.188894 k=1000 dx=0.097143
+
+target_concept
+	nr_target_attributes = 1
+	target_type = single numeric
+	primary_target = age
+	target_value = null
+
+search_parameters
+	quality_measure = Z-Score
+	quality_measure_minimum = 0.0
+	search_depth = 1
+	minimum_coverage = 100
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	workclass =
+	fnlwgt <=
+	fnlwgt >=
+	education =
+	education-num <=
+	education-num >=
+	marital-status =
+	occupation =
+	relationship =
+	race =
+	sex =
+	capital-gain <=
+	capital-gain >=
+	capital-loss <=
+	capital-loss >=
+	hours-per-week <=
+	hours-per-week >=
+	native-country =
+	target =
+
+age
+fnlwgt
+education-num
+capital-gain
+capital-loss
+hours-per-week
+candidate workclass = 'Private' size: 698
+  subgroup nr. 0; quality -3.5504984855651855
+candidate fnlwgt <= 82804.0 size: 125
+  subgroup nr. 1; quality 1.8007138967514038
+candidate fnlwgt <= 114937.0 size: 250
+  subgroup nr. 2; quality 1.992005467414856
+candidate fnlwgt <= 152453.0 size: 375
+  subgroup nr. 3; quality 2.3293964862823486
+candidate fnlwgt <= 180572.0 size: 500
+  subgroup nr. 4; quality 2.58585786819458
+candidate fnlwgt <= 201080.0 size: 625
+  subgroup nr. 5; quality 2.122865915298462
+candidate fnlwgt <= 247019.0 size: 750
+  subgroup nr. 6; quality 1.2280840873718262
+candidate fnlwgt <= 304873.0 size: 875
+  subgroup nr. 7; quality 0.8902696967124939
+candidate fnlwgt >= 83082.0 size: 875
+  subgroup nr. 8; quality -0.6806034445762634
+candidate fnlwgt >= 115076.0 size: 750
+  subgroup nr. 9; quality -1.1500848531723022
+candidate fnlwgt >= 153044.0 size: 625
+  subgroup nr. 10; quality -1.8043384552001953
+candidate fnlwgt >= 180609.0 size: 500
+  subgroup nr. 11; quality -2.5858514308929443
+candidate fnlwgt >= 201872.0 size: 375
+  subgroup nr. 12; quality -2.740607976913452
+candidate fnlwgt >= 247552.0 size: 250
+  subgroup nr. 13; quality -2.1270949840545654
+candidate fnlwgt >= 309055.0 size: 125
+  subgroup nr. 14; quality -2.355419397354126
+candidate education = 'Bachelors' size: 166
+  subgroup nr. 15; quality -0.7298334836959839
+candidate education = 'HS-grad' size: 321
+  subgroup nr. 16; quality 1.4834554195404053
+candidate education = 'Some-college' size: 225
+  subgroup nr. 17; quality -3.859630584716797
+candidate education-num <= 8.0 size: 127
+  subgroup nr. 18; quality 0.7682797908782959
+candidate education-num <= 9.0 size: 448
+  subgroup nr. 19; quality 1.6647614240646362
+candidate education-num <= 10.0 size: 673
+  subgroup nr. 20; quality -0.8734028339385986
+candidate education-num <= 12.0 size: 756
+  subgroup nr. 21; quality -0.8792133927345276
+candidate education-num >= 8.0 size: 882
+  subgroup nr. 23; quality -0.4491533935070038
+candidate education-num >= 9.0 size: 873
+  subgroup nr. 24; quality -0.2930298447608948
+candidate education-num >= 10.0 size: 552
+  subgroup nr. 25; quality -1.499756097793579
+candidate education-num >= 12.0 size: 279
+  subgroup nr. 26; quality 1.161090612411499
+candidate education-num >= 13.0 size: 244
+  subgroup nr. 27; quality 1.5476179122924805
+candidate marital-status = 'Never-married' size: 344
+  subgroup nr. 28; quality -12.936984062194824
+candidate marital-status = 'Married-civ-spouse' size: 443
+  subgroup nr. 29; quality 7.205008029937744
+candidate marital-status = 'Divorced' size: 136
+  subgroup nr. 30; quality 3.663590908050537
+candidate occupation = 'Exec-managerial' size: 124
+  subgroup nr. 31; quality 3.046700954437256
+candidate occupation = 'Prof-specialty' size: 124
+  subgroup nr. 32; quality 1.8756057024002075
+candidate occupation = 'Other-service' size: 107
+  subgroup nr. 33; quality -1.8436356782913208
+candidate occupation = 'Sales' size: 112
+  subgroup nr. 34; quality -2.0021088123321533
+candidate occupation = 'Craft-repair' size: 126
+  subgroup nr. 35; quality 0.6314507126808167
+candidate relationship = 'Not-in-family' size: 279
+  subgroup nr. 36; quality -0.27472734451293945
+candidate relationship = 'Husband' size: 376
+  subgroup nr. 37; quality 7.903417110443115
+candidate relationship = 'Own-child' size: 151
+  subgroup nr. 38; quality -12.977020263671875
+candidate relationship = 'Unmarried' size: 109
+  subgroup nr. 39; quality 2.199817180633545
+candidate race = 'White' size: 847
+  subgroup nr. 40; quality -0.0288308784365654
+candidate race = 'Black' size: 110
+  subgroup nr. 41; quality 0.10283179581165314
+candidate sex = 'Male' size: 671
+  subgroup nr. 42; quality 1.6311802864074707
+candidate sex = 'Female' size: 329
+  subgroup nr. 43; quality -2.329502582550049
+candidate hours-per-week <= 25.0 size: 137
+  subgroup nr. 46; quality -1.9976924657821655
+candidate hours-per-week <= 40.0 size: 717
+  subgroup nr. 47; quality -1.3114911317825317
+candidate hours-per-week <= 45.0 size: 800
+  subgroup nr. 48; quality -1.1017707586288452
+candidate hours-per-week <= 50.0 size: 895
+  subgroup nr. 49; quality -0.5251956582069397
+candidate hours-per-week >= 25.0 size: 884
+  subgroup nr. 50; quality 0.3552144765853882
+candidate hours-per-week >= 40.0 size: 755
+  subgroup nr. 51; quality 1.3678785562515259
+candidate hours-per-week >= 45.0 size: 261
+  subgroup nr. 52; quality 1.9933679103851318
+candidate hours-per-week >= 50.0 size: 184
+  subgroup nr. 53; quality 2.0366597175598145
+candidate target = 'leq50K' size: 768
+  subgroup nr. 55; quality -3.475613594055176
+candidate target = 'gr50K' size: 232
+  subgroup nr. 56; quality 6.323667049407959
+Raw result set size: 26
+Filtered result set size: 22
+Mining process finished in 0 minutes and 0.010 seconds.
+   22 subgroups found.
+
+number of candidates: 57
+number of subgroups : 22
+CCSUM=2990	N=1000	CCEXPECTED=2.990000	CR(10)=0.517438	H(10)=5.449962
+CCSUM=8577	N=1000	CCEXPECTED=8.577000	CR(100)=0.281118	H(100)=8.980060
+    Depth  Coverage  ...  p-Value                             Conditions
+0       1       376  ...      NaN               relationship = 'Husband'
+1       1       443  ...      NaN  marital-status = 'Married-civ-spouse'
+2       1       232  ...      NaN                       target = 'gr50K'
+3       1       136  ...      NaN            marital-status = 'Divorced'
+4       1       124  ...      NaN         occupation = 'Exec-managerial'
+5       1       500  ...      NaN                     fnlwgt <= 180572.0
+6       1       109  ...      NaN             relationship = 'Unmarried'
+7       1       625  ...      NaN                     fnlwgt <= 201080.0
+8       1       184  ...      NaN                 hours-per-week >= 50.0
+9       1       261  ...      NaN                 hours-per-week >= 45.0
+10      1       124  ...      NaN          occupation = 'Prof-specialty'
+11      1       448  ...      NaN                   education-num <= 9.0
+12      1       671  ...      NaN                           sex = 'Male'
+13      1       244  ...      NaN                  education-num >= 13.0
+14      1       321  ...      NaN                  education = 'HS-grad'
+15      1       755  ...      NaN                 hours-per-week >= 40.0
+16      1       750  ...      NaN                     fnlwgt <= 247019.0
+17      1       279  ...      NaN                  education-num >= 12.0
+18      1       875  ...      NaN                     fnlwgt <= 304873.0
+19      1       126  ...      NaN            occupation = 'Craft-repair'
+20      1       884  ...      NaN                 hours-per-week >= 25.0
+21      1       110  ...      NaN                         race = 'Black'
+
+[22 rows x 7 columns]
+
+
+******* Section 9 *******
+
+         Attribute  Cardinality     Type  Enabled
+0      MS SubClass           16  numeric     True
+1        MS Zoning            7  nominal     True
+2     Lot Frontage          129  nominal     True
+3         Lot Area         1960  numeric     True
+4           Street            2  nominal     True
+..             ...          ...      ...      ...
+75         Mo Sold           12  numeric     True
+76         Yr Sold            5  numeric     True
+77       Sale Type           10  nominal     True
+78  Sale Condition            6  nominal     True
+79       SalePrice         1032  numeric     True
+
+[80 rows x 4 columns]
+Linear model for the entire dataset:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              SalePrice   R-squared:                       0.071
+Model:                            OLS   Adj. R-squared:                  0.071
+Method:                 Least Squares   F-statistic:                     223.9
+Date:                Fri, 18 Oct 2024   Prob (F-statistic):           7.63e-49
+Time:                        18:35:20   Log-Likelihood:                -37124.
+No. Observations:                2930   AIC:                         7.425e+04
+Df Residuals:                    2928   BIC:                         7.426e+04
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       1.534e+05   2319.909     66.112      0.000    1.49e+05    1.58e+05
+Lot Area       2.7022      0.181     14.965      0.000       2.348       3.056
+==============================================================================
+Omnibus:                      981.022   Durbin-Watson:                   0.771
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4394.498
+Skew:                           1.561   Prob(JB):                         0.00
+Kurtosis:                       8.124   Cond. No.                     2.09e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.09e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Dollars per square foot in the entire dataset: 2.7022446157281106
+
+target_concept
+	nr_target_attributes = 1
+	target_type = double regression
+	primary_target = Lot Area
+	target_value = null
+	secondary_target = SalePrice
+
+search_parameters
+	quality_measure = Sign. of Slope Diff. (complement)
+	quality_measure_minimum = 0.0
+	search_depth = 1
+	minimum_coverage = 293
+	maximum_coverage_fraction = 0.9
+	minimum_support = 0
+	maximum_subgroups = 1000
+	minimum_improvement = 0.0
+	filter_subgroups = true
+	maximum_time = 0.0
+	search_strategy = beam
+	use_nominal_sets = false
+	search_strategy_width = 100
+	numeric_operators = [<=, >=]
+	numeric_strategy = bins
+	nr_bins = 8
+	nr_threads = 16
+	alpha = 0.5
+	beta = 1.0
+	post_processing_do_autorun = true
+	post_processing_count = 20
+	beam_seed = []
+	overall_ranking_loss = 0.0
+
+ConditionBaseSet
+	MS SubClass <=
+	MS SubClass >=
+	MS Zoning =
+	Lot Frontage =
+	Street =
+	Alley =
+	Lot Shape =
+	Land Contour =
+	Utilities =
+	Lot Config =
+	Land Slope =
+	Neighborhood =
+	Condition 1 =
+	Condition 2 =
+	Bldg Type =
+	House Style =
+	Overall Qual <=
+	Overall Qual >=
+	Overall Cond <=
+	Overall Cond >=
+	Year Built <=
+	Year Built >=
+	Year Remod/Add <=
+	Year Remod/Add >=
+	Roof Style =
+	Roof Matl =
+	Exterior 1st =
+	Exterior 2nd =
+	Mas Vnr Type =
+	Mas Vnr Area =
+	Exter Qual =
+	Exter Cond =
+	Foundation =
+	Bsmt Qual =
+	Bsmt Cond =
+	Bsmt Exposure =
+	BsmtFin Type 1 =
+	BsmtFin SF 1 =
+	BsmtFin Type 2 =
+	BsmtFin SF 2 =
+	Bsmt Unf SF =
+	Total Bsmt SF =
+	Heating =
+	Heating QC =
+	Central Air =
+	Electrical =
+	1st Flr SF <=
+	1st Flr SF >=
+	2nd Flr SF <=
+	2nd Flr SF >=
+	Low Qual Fin SF <=
+	Low Qual Fin SF >=
+	Gr Liv Area <=
+	Gr Liv Area >=
+	Bsmt Full Bath =
+	Bsmt Half Bath =
+	Full Bath <=
+	Full Bath >=
+	Half Bath <=
+	Half Bath >=
+	Bedroom AbvGr <=
+	Bedroom AbvGr >=
+	Kitchen AbvGr <=
+	Kitchen AbvGr >=
+	Kitchen Qual =
+	TotRms AbvGrd <=
+	TotRms AbvGrd >=
+	Functional =
+	Fireplaces <=
+	Fireplaces >=
+	Fireplace Qu =
+	Garage Type =
+	Garage Yr Blt =
+	Garage Finish =
+	Garage Cars <=
+	Garage Cars >=
+	Garage Area =
+	Garage Qual =
+	Garage Cond =
+	Paved Drive =
+	Wood Deck SF <=
+	Wood Deck SF >=
+	Open Porch SF <=
+	Open Porch SF >=
+	Enclosed Porch <=
+	Enclosed Porch >=
+	3Ssn Porch <=
+	3Ssn Porch >=
+	Screen Porch <=
+	Screen Porch >=
+	Pool Area <=
+	Pool Area >=
+	Pool QC =
+	Fence =
+	Misc Feature =
+	Misc Val <=
+	Misc Val >=
+	Mo Sold <=
+	Mo Sold >=
+	Yr Sold <=
+	Yr Sold >=
+	Sale Type =
+	Sale Condition =
+
+MS SubClass
+Lot Area
+Overall Qual
+Overall Cond
+Year Built
+Year Remod/Add
+1st Flr SF
+2nd Flr SF
+Low Qual Fin SF
+Gr Liv Area
+Full Bath
+Half Bath
+Bedroom AbvGr
+Kitchen AbvGr
+TotRms AbvGrd
+Fireplaces
+Garage Cars
+Wood Deck SF
+Open Porch SF
+Enclosed Porch
+3Ssn Porch
+Screen Porch
+Pool Area
+Misc Val
+Mo Sold
+Yr Sold
+SalePrice
+
+           slope: 2.2228911730173966
+complement slope: 3.0752046013950713
+candidate MS SubClass <= 20.0 size: 1079
+  subgroup nr. 0; quality 2.301487445831299
+
+           slope: 2.628671360449815
+complement slope: 2.939276965542774
+candidate MS SubClass <= 30.0 size: 1218
+  subgroup nr. 1; quality 0.8444555401802063
+
+           slope: 2.5334181972324217
+complement slope: 3.5517634312479527
+candidate MS SubClass <= 50.0 size: 1529
+  subgroup nr. 2; quality 2.6075668334960938
+
+           slope: 2.968971288760892
+complement slope: 1.149682777840446
+candidate MS SubClass <= 60.0 size: 2104
+  subgroup nr. 3; quality 4.980065822601318
+
+           slope: 2.9863422560387893
+complement slope: 1.0614943926772384
+candidate MS SubClass <= 70.0 size: 2232
+  subgroup nr. 4; quality 5.136713981628418
+
+           slope: 3.0752046013950713
+complement slope: 2.2228911730173966
+candidate MS SubClass >= 30.0 size: 1851
+  subgroup nr. 6; quality 2.3005614280700684
+
+           slope: 2.902960114457606
+complement slope: 2.6854873828172448
+candidate MS SubClass >= 50.0 size: 1688
+  subgroup nr. 7; quality 0.591637134552002
+
+           slope: 3.5517634312479527
+complement slope: 2.5334181972324217
+candidate MS SubClass >= 60.0 size: 1401
+  subgroup nr. 8; quality 2.6568260192871094
+
+           slope: 1.149682777840446
+complement slope: 2.968971288760892
+candidate MS SubClass >= 70.0 size: 826
+  subgroup nr. 9; quality 5.06930685043335
+
+           slope: 0.868618636579179
+complement slope: 3.1223432945539176
+candidate MS SubClass >= 120.0 size: 400
+  subgroup nr. 10; quality 5.4473748207092285
+
+           slope: 2.2199471388523437
+complement slope: 2.620104738774167
+candidate MS Zoning = 'RL' size: 2273
+  subgroup nr. 11; quality 0.5467946529388428
+
+           slope: 4.055717708907497
+complement slope: 2.128479979157083
+candidate MS Zoning = 'RM' size: 462
+  subgroup nr. 12; quality 2.8273603916168213
+
+           slope: 0.8514035852512047
+complement slope: 4.175158404089025
+candidate Lot Frontage = '?' size: 490
+  subgroup nr. 13; quality 10.055070877075195
+
+           slope: 2.0464414989543203
+complement slope: 2.5776982002364917
+candidate Lot Shape = 'IR1' size: 979
+  subgroup nr. 16; quality 1.2802228927612305
+
+           slope: 5.694472547860682
+complement slope: 1.4577216422436716
+candidate Lot Shape = 'Reg' size: 1859
+  subgroup nr. 17; quality 8.862151145935059
+
+           slope: 6.756807086533599
+complement slope: 1.0647965819891143
+candidate Land Contour = 'Lvl' size: 2633
+  subgroup nr. 18; quality 10.499675750732422
+
+           slope: 2.498359482701431
+complement slope: 2.758199884223998
+candidate Lot Config = 'Corner' size: 511
+  subgroup nr. 20; quality 0.556067168712616
+
+           slope: 2.864491857705926
+complement slope: 2.42003513613918
+candidate Lot Config = 'Inside' size: 2140
+  subgroup nr. 21; quality 1.1896748542785645
+
+           slope: 4.813189353396727
+complement slope: 2.635978890038061
+candidate Neighborhood = 'NAmes' size: 443
+  subgroup nr. 23; quality 4.6753621101379395
+
+           slope: 2.5879815764391707
+complement slope: 4.408706044913075
+candidate Condition 1 = 'Norm' size: 2522
+  subgroup nr. 24; quality 2.894986867904663
+
+           slope: 3.0699018411507266
+complement slope: 0.5862627199272392
+candidate Bldg Type = '1Fam' size: 2425
+  subgroup nr. 26; quality 6.07696008682251
+
+           slope: 2.190591348311394
+complement slope: 3.33779972849797
+candidate House Style = '1Story' size: 1481
+  subgroup nr. 27; quality 3.1633758544921875
+
+           slope: 7.5855506236465144
+complement slope: 1.9641701862437464
+candidate House Style = '2Story' size: 873
+  subgroup nr. 28; quality 10.718426704406738
+
+           slope: 1.1552190799462967
+complement slope: 3.311865451681936
+candidate House Style = '1.5Fin' size: 314
+  subgroup nr. 29; quality 6.639016628265381
+
+           slope: 1.6218562123982125
+complement slope: 2.7876365860313457
+candidate Overall Qual <= 5.0 size: 1108
+  subgroup nr. 30; quality 3.3010051250457764
+
+           slope: 1.7711629290414008
+complement slope: 2.7611901858613868
+candidate Overall Qual <= 6.0 size: 1840
+  subgroup nr. 31; quality 2.0887722969055176
+
+           slope: 1.753149741159258
+complement slope: 5.835600616188157
+candidate Overall Qual <= 7.0 size: 2442
+  subgroup nr. 32; quality 3.20444917678833
+
+           slope: 2.7876365860313457
+complement slope: 1.6218562123982125
+candidate Overall Qual >= 6.0 size: 1822
+  subgroup nr. 35; quality 2.548013925552368
+
+           slope: 2.7611901858613868
+complement slope: 1.7711629290414008
+candidate Overall Qual >= 7.0 size: 1090
+  subgroup nr. 36; quality 2.1658449172973633
+
+           slope: 5.835600616188157
+complement slope: 1.753149741159258
+candidate Overall Qual >= 8.0 size: 488
+  subgroup nr. 37; quality 5.574916362762451
+
+           slope: 2.688233738217147
+complement slope: 2.503033388633605
+candidate Overall Cond <= 5.0 size: 1822
+  subgroup nr. 38; quality 0.5221667289733887
+
+           slope: 2.602471396991251
+complement slope: 2.9659494534894493
+candidate Overall Cond <= 6.0 size: 2355
+  subgroup nr. 39; quality 0.9822304844856262
+
+           slope: 2.503033388633605
+complement slope: 2.688233738217147
+candidate Overall Cond >= 6.0 size: 1108
+  subgroup nr. 42; quality 0.5421828627586365
+
+           slope: 2.9659494534894493
+complement slope: 2.602471396991251
+candidate Overall Cond >= 7.0 size: 575
+  subgroup nr. 43; quality 1.0533555746078491
+
+           slope: 3.2957395805927625
+complement slope: 2.5217779014938166
+candidate Year Built <= 1929.0 size: 372
+  subgroup nr. 44; quality 1.4617390632629395
+
+           slope: 3.0478520190381606
+complement slope: 2.419444854239585
+candidate Year Built <= 1954.0 size: 773
+  subgroup nr. 45; quality 1.5826236009597778
+
+           slope: 2.3281956489173607
+complement slope: 2.807175593597294
+candidate Year Built <= 1963.0 size: 1113
+  subgroup nr. 46; quality 1.3475886583328247
+
+           slope: 1.7669281693644485
+complement slope: 6.229291101149644
+candidate Year Built <= 1973.0 size: 1471
+  subgroup nr. 47; quality 7.351716041564941
+
+           slope: 1.965101728103396
+complement slope: 7.29031016780341
+candidate Year Built <= 1990.0 size: 1832
+  subgroup nr. 48; quality 6.776593208312988
+
+           slope: 2.1775451523185856
+complement slope: 8.072289006282565
+candidate Year Built <= 2001.0 size: 2230
+  subgroup nr. 49; quality 6.178685188293457
+
+           slope: 2.433221692563476
+complement slope: 5.616735670688504
+candidate Year Built <= 2005.0 size: 2606
+  subgroup nr. 50; quality 2.3207335472106934
+
+           slope: 2.5273302432168543
+complement slope: 3.31664095616859
+candidate Year Built >= 1929.0 size: 2566
+  subgroup nr. 51; quality 0.9510152339935303
+
+           slope: 2.4137872046624063
+complement slope: 2.9944151859112407
+candidate Year Built >= 1954.0 size: 2200
+  subgroup nr. 52; quality 0.9435556530952454
+
+           slope: 2.791480982933044
+complement slope: 2.336508182841436
+candidate Year Built >= 1963.0 size: 1852
+  subgroup nr. 53; quality 1.0688505172729492
+
+           slope: 6.423082989592451
+complement slope: 1.750828152590539
+candidate Year Built >= 1973.0 size: 1480
+  subgroup nr. 54; quality 9.83849811553955
+
+           slope: 7.271985493027975
+complement slope: 1.9520177452122143
+candidate Year Built >= 1990.0 size: 1117
+  subgroup nr. 55; quality 9.525968551635742
+
+           slope: 8.009073258482232
+complement slope: 2.1778577525297114
+candidate Year Built >= 2001.0 size: 735
+  subgroup nr. 56; quality 8.832059860229492
+
+           slope: 7.256394382530312
+complement slope: 2.31425494325301
+candidate Year Built >= 2005.0 size: 466
+  subgroup nr. 57; quality 5.997769832611084
+
+           slope: 1.5444615739757934
+complement slope: 2.586310730891316
+candidate Year Remod/Add <= 1951.0 size: 375
+  subgroup nr. 58; quality 2.3675496578216553
+
+           slope: 1.339481697143341
+complement slope: 4.116856496041657
+candidate Year Remod/Add <= 1965.0 size: 740
+  subgroup nr. 59; quality 7.457680702209473
+
+           slope: 1.6227458474545104
+complement slope: 3.8661453993879458
+candidate Year Remod/Add <= 1977.0 size: 1140
+  subgroup nr. 60; quality 5.413477420806885
+
+           slope: 1.9537966069174357
+complement slope: 3.73644597777967
+candidate Year Remod/Add <= 1993.0 size: 1493
+  subgroup nr. 61; quality 3.9562652111053467
+
+           slope: 2.3281003227664643
+complement slope: 3.5031618940617015
+candidate Year Remod/Add <= 1999.0 size: 1850
+  subgroup nr. 62; quality 2.4460530281066895
+
+           slope: 2.446322282821096
+complement slope: 3.144316999235382
+candidate Year Remod/Add <= 2004.0 size: 2295
+  subgroup nr. 63; quality 1.123659372329712
+
+           slope: 2.565528855377681
+complement slope: 1.6582359788154744
+candidate Year Remod/Add >= 1951.0 size: 2569
+  subgroup nr. 65; quality 1.0973883867263794
+
+           slope: 2.676225013814987
+complement slope: 2.3025765163805083
+candidate Year Remod/Add >= 1965.0 size: 2218
+  subgroup nr. 66; quality 0.6526544094085693
+
+           slope: 3.8588820125458816
+complement slope: 1.6166144694338038
+candidate Year Remod/Add >= 1977.0 size: 1836
+  subgroup nr. 67; quality 5.696774959564209
+
+           slope: 3.824444167616842
+complement slope: 1.8837057775858432
+candidate Year Remod/Add >= 1993.0 size: 1480
+  subgroup nr. 68; quality 4.697254657745361
+
+           slope: 3.5362429628597054
+complement slope: 2.340834544970602
+candidate Year Remod/Add >= 1999.0 size: 1140
+  subgroup nr. 69; quality 2.7894015312194824
+
+           slope: 3.515509528709723
+complement slope: 2.398876583112902
+candidate Year Remod/Add >= 2004.0 size: 746
+  subgroup nr. 70; quality 2.195366621017456
+
+           slope: 2.751670226418678
+complement slope: 2.512420461919474
+candidate Year Remod/Add >= 2006.0 size: 494
+  subgroup nr. 71; quality 0.41320186853408813
+
+           slope: 2.2486644235265327
+complement slope: 2.546315679580876
+candidate Roof Style = 'Hip' size: 551
+  subgroup nr. 72; quality 0.5878231525421143
+
+           slope: 2.5459321421160905
+complement slope: 2.2342295367692975
+candidate Roof Style = 'Gable' size: 2321
+  subgroup nr. 73; quality 0.6323608756065369
+
+           slope: 10.05591026389475
+complement slope: 2.1063403200836754
+candidate Exterior 1st = 'VinylSd' size: 1026
+  subgroup nr. 75; quality 12.056520462036133
+
+           slope: 1.7492682838254228
+complement slope: 3.0303399143187324
+candidate Exterior 1st = 'Wd Sdng' size: 420
+  subgroup nr. 76; quality 3.3657937049865723
+
+           slope: 4.60986101550092
+complement slope: 2.586925772325748
+candidate Exterior 1st = 'HdBoard' size: 442
+  subgroup nr. 77; quality 3.659924268722534
+
+           slope: 3.384747284126646
+complement slope: 2.558601273697671
+candidate Exterior 1st = 'MetalSd' size: 450
+  subgroup nr. 78; quality 1.0625078678131104
+
+           slope: 9.614428506358724
+complement slope: 2.120400593528725
+candidate Exterior 2nd = 'VinylSd' size: 1015
+  subgroup nr. 79; quality 11.3071870803833
+
+           slope: 2.935329543016428
+complement slope: 2.707516757897931
+candidate Exterior 2nd = 'Wd Sdng' size: 397
+  subgroup nr. 80; quality 0.4586852788925171
+
+           slope: 2.069364405841301
+complement slope: 2.8535438616248214
+candidate Exterior 2nd = 'HdBoard' size: 406
+  subgroup nr. 81; quality 2.0877127647399902
+
+           slope: 3.338345984102453
+complement slope: 2.573904582684603
+candidate Exterior 2nd = 'MetalSd' size: 447
+  subgroup nr. 82; quality 1.0171949863433838
+
+           slope: 2.0064378247375725
+complement slope: 3.285932752725028
+candidate Mas Vnr Type = 'nan' size: 1752
+  subgroup nr. 83; quality 2.8045718669891357
+
+           slope: 7.643271578733884
+complement slope: 1.9928723177082701
+candidate Mas Vnr Type = 'BrkFace' size: 880
+  subgroup nr. 84; quality 9.831283569335938
+
+           slope: 1.9940272506677723
+complement slope: 3.301962715678402
+candidate Mas Vnr Area = '0' size: 1748
+  subgroup nr. 85; quality 2.8759896755218506
+
+           slope: 1.8426709635270977
+complement slope: 4.179357957171144
+candidate Exter Qual = 'TA' size: 1799
+  subgroup nr. 86; quality 4.122315883636475
+
+           slope: 3.4499683118196187
+complement slope: 2.4821060037413822
+candidate Exter Qual = 'Gd' size: 989
+  subgroup nr. 87; quality 2.2966437339782715
+
+           slope: 2.504289402076644
+complement slope: 6.3939106197077376
+candidate Exter Cond = 'TA' size: 2549
+  subgroup nr. 88; quality 5.104076385498047
+
+           slope: 7.2113167520932535
+complement slope: 2.5208046605313723
+candidate Exter Cond = 'Gd' size: 299
+  subgroup nr. 89; quality 6.49053430557251
+
+           slope: 1.677274421344562
+complement slope: 6.911735605298196
+candidate Foundation = 'CBlock' size: 1244
+  subgroup nr. 90; quality 9.970908164978027
+
+           slope: 6.948733573284813
+complement slope: 1.850147461072257
+candidate Foundation = 'PConc' size: 1310
+  subgroup nr. 91; quality 9.723204612731934
+
+           slope: 3.622799946292476
+complement slope: 2.5244400648143683
+candidate Foundation = 'BrkTil' size: 311
+  subgroup nr. 92; quality 1.8067195415496826
+
+           slope: 2.182141094158016
+complement slope: 2.6139089326928215
+candidate Bsmt Qual = 'TA' size: 1283
+  subgroup nr. 93; quality 1.228903889656067
+
+           slope: 1.718451727871942
+complement slope: 4.1578952935592
+candidate Bsmt Qual = 'Gd' size: 1219
+  subgroup nr. 94; quality 6.289113521575928
+
+           slope: 2.6011131207736864
+complement slope: 4.668826708024145
+candidate Bsmt Cond = 'TA' size: 2616
+  subgroup nr. 95; quality 2.494459629058838
+
+           slope: 4.972148439861972
+complement slope: 1.7054002977288352
+candidate Bsmt Exposure = 'No' size: 1906
+  subgroup nr. 96; quality 7.630276679992676
+
+           slope: 4.8821408425680195
+complement slope: 2.5307851801104024
+candidate Bsmt Exposure = 'Av' size: 418
+  subgroup nr. 97; quality 3.102919340133667
+
+           slope: 1.4204857143249265
+complement slope: 3.777302475023246
+candidate BsmtFin Type 1 = 'ALQ' size: 429
+  subgroup nr. 98; quality 7.632929801940918
+
+           slope: 4.802822239727257
+complement slope: 2.103189977949797
+candidate BsmtFin Type 1 = 'GLQ' size: 859
+  subgroup nr. 99; quality 5.21641206741333
+
+           slope: 5.457116597185873
+complement slope: 2.359256922605677
+candidate BsmtFin Type 1 = 'Unf' size: 851
+  subgroup nr. 100; quality 5.660136699676514
+
+           slope: 4.4709423174068625
+complement slope: 2.394260449249809
+candidate BsmtFin SF 1 = '0' size: 930
+  subgroup nr. 101; quality 4.100931167602539
+
+           slope: 3.9068574372564906
+complement slope: 1.358432525350565
+candidate BsmtFin Type 2 = 'Unf' size: 2499
+  subgroup nr. 102; quality 6.886280536651611
+
+           slope: 3.768230826804752
+complement slope: 1.3005102639247887
+candidate BsmtFin SF 2 = '0' size: 2578
+  subgroup nr. 103; quality 6.844668388366699
+
+           slope: 1.893874246131697
+complement slope: 3.3455388606415055
+candidate Heating QC = 'TA' size: 864
+  subgroup nr. 105; quality 4.159287929534912
+
+           slope: 3.672277875483938
+complement slope: 2.009216940873508
+candidate Heating QC = 'Ex' size: 1495
+  subgroup nr. 106; quality 4.0192670822143555
+
+           slope: 2.1822675849694813
+complement slope: 2.7793110642682395
+candidate Heating QC = 'Gd' size: 476
+  subgroup nr. 107; quality 1.6535769701004028
+
+           slope: 2.7499471755276237
+complement slope: 2.3115349887040972
+candidate 1st Flr SF <= 773.0 size: 367
+  subgroup nr. 110; quality 0.7458258867263794
+
+           slope: 3.472331299196723
+complement slope: 2.043757025467513
+candidate 1st Flr SF <= 876.0 size: 733
+  subgroup nr. 111; quality 2.8984556198120117
+
+           slope: 4.11074670842864
+complement slope: 1.7677546241757198
+candidate 1st Flr SF <= 976.0 size: 1103
+  subgroup nr. 112; quality 5.249088287353516
+
+           slope: 3.9032163306249275
+complement slope: 1.442843408130536
+candidate 1st Flr SF <= 1084.0 size: 1466
+  subgroup nr. 113; quality 5.902799606323242
+
+           slope: 4.191288174155334
+complement slope: 1.156419816496797
+candidate 1st Flr SF <= 1215.0 size: 1833
+  subgroup nr. 114; quality 7.142437934875488
+
+           slope: 4.179572463554001
+complement slope: 0.6849095498558257
+candidate 1st Flr SF <= 1384.0 size: 2198
+  subgroup nr. 115; quality 7.670131683349609
+
+           slope: 2.3152310422675564
+complement slope: 0.6533123475624113
+candidate 1st Flr SF <= 1624.0 size: 2565
+  subgroup nr. 116; quality 2.685249090194702
+
+           slope: 2.3138551469580477
+complement slope: 2.738045401752978
+candidate 1st Flr SF >= 773.0 size: 2566
+  subgroup nr. 117; quality 0.45124027132987976
+
+           slope: 2.05007408203309
+complement slope: 3.464764491459288
+candidate 1st Flr SF >= 876.0 size: 2202
+  subgroup nr. 118; quality 1.8862630128860474
+
+           slope: 1.774139417422068
+complement slope: 4.0902987765301235
+candidate 1st Flr SF >= 976.0 size: 1833
+  subgroup nr. 119; quality 3.4081871509552
+
+           slope: 1.4464462029454006
+complement slope: 3.9029804916636466
+candidate 1st Flr SF >= 1084.0 size: 1466
+  subgroup nr. 120; quality 3.901979684829712
+
+           slope: 1.1562788276366394
+complement slope: 4.181541643840545
+candidate 1st Flr SF >= 1215.0 size: 1099
+  subgroup nr. 121; quality 4.906209945678711
+
+           slope: 0.6848471678124984
+complement slope: 4.181372001027928
+candidate 1st Flr SF >= 1384.0 size: 734
+  subgroup nr. 122; quality 5.453614711761475
+
+           slope: 0.6617752506208581
+complement slope: 2.3128288560133194
+candidate 1st Flr SF >= 1624.0 size: 367
+  subgroup nr. 123; quality 2.783704996109009
+
+           slope: 2.321425405814887
+complement slope: 3.222302465791719
+candidate 2nd Flr SF <= 0.0 size: 1678
+  subgroup nr. 124; quality 2.452195405960083
+
+           slope: 2.149076921388139
+complement slope: 3.9918809148357792
+candidate 2nd Flr SF <= 504.0 size: 1843
+  subgroup nr. 125; quality 4.451887130737305
+
+           slope: 2.1136993344745076
+complement slope: 5.6020339180257075
+candidate 2nd Flr SF <= 704.0 size: 2202
+  subgroup nr. 126; quality 5.15543270111084
+
+           slope: 2.250247796309872
+complement slope: 4.785577719247439
+candidate 2nd Flr SF <= 886.0 size: 2571
+  subgroup nr. 127; quality 2.25917387008667
+
+           slope: 3.222302465791719
+complement slope: 2.321425405814887
+candidate 2nd Flr SF >= 110.0 size: 1252
+  subgroup nr. 128; quality 2.4578278064727783
+
+           slope: 4.1208595914762
+complement slope: 2.1005349429490687
+candidate 2nd Flr SF >= 504.0 size: 1104
+  subgroup nr. 129; quality 5.0697340965271
+
+           slope: 5.618034677281321
+complement slope: 2.109219723929796
+candidate 2nd Flr SF >= 704.0 size: 733
+  subgroup nr. 130; quality 6.126292705535889
+
+           slope: 4.942194961393833
+complement slope: 2.2393570354661354
+candidate 2nd Flr SF >= 886.0 size: 369
+  subgroup nr. 131; quality 3.149509906768799
+
+           slope: 1.1209876988798904
+complement slope: 2.3980984582043843
+candidate Gr Liv Area <= 964.0 size: 367
+  subgroup nr. 133; quality 2.2612171173095703
+
+           slope: 2.2159005598868178
+complement slope: 2.066683221184764
+candidate Gr Liv Area <= 1126.0 size: 735
+  subgroup nr. 134; quality 0.3757271468639374
+
+           slope: 1.7011928321514527
+complement slope: 1.787248725785583
+candidate Gr Liv Area <= 1296.0 size: 1100
+  subgroup nr. 135; quality 0.21692724525928497
+
+           slope: 1.9745942989065168
+complement slope: 1.495710363272053
+candidate Gr Liv Area <= 1442.0 size: 1468
+  subgroup nr. 136; quality 1.2044506072998047
+
+           slope: 2.1573744730267834
+complement slope: 1.2777565779206563
+candidate Gr Liv Area <= 1592.0 size: 1832
+  subgroup nr. 137; quality 2.154536485671997
+
+           slope: 2.337157524273263
+complement slope: 1.067485483702799
+candidate Gr Liv Area <= 1743.0 size: 2200
+  subgroup nr. 138; quality 2.8246524333953857
+
+           slope: 1.8949563841507207
+complement slope: 1.4488727565791828
+candidate Gr Liv Area <= 2044.0 size: 2564
+  subgroup nr. 139; quality 0.5352575182914734
+
+           slope: 2.3981356911507157
+complement slope: 1.0307490980182072
+candidate Gr Liv Area >= 964.0 size: 2565
+  subgroup nr. 140; quality 0.9126095771789551
+
+           slope: 2.0654553142902334
+complement slope: 2.1610612769549347
+candidate Gr Liv Area >= 1126.0 size: 2199
+  subgroup nr. 141; quality 0.10415714234113693
+
+           slope: 1.7935120215312907
+complement slope: 1.7156580457281536
+candidate Gr Liv Area >= 1296.0 size: 1834
+  subgroup nr. 142; quality 0.09974094480276108
+
+           slope: 1.4977261623937732
+complement slope: 1.9541318028486891
+candidate Gr Liv Area >= 1442.0 size: 1467
+  subgroup nr. 143; quality 0.6720911264419556
+
+           slope: 1.2777999862224219
+complement slope: 2.1502472663798575
+candidate Gr Liv Area >= 1592.0 size: 1099
+  subgroup nr. 144; quality 1.4869048595428467
+
+           slope: 1.0673722310949065
+complement slope: 2.308740774459068
+candidate Gr Liv Area >= 1743.0 size: 733
+  subgroup nr. 145; quality 2.1426966190338135
+
+           slope: 1.4582508884870409
+complement slope: 1.8948500100189145
+candidate Gr Liv Area >= 2044.0 size: 367
+  subgroup nr. 146; quality 0.664472758769989
+
+           slope: 4.152147216190454
+complement slope: 1.9717172320021157
+candidate Bsmt Full Bath = '1' size: 1181
+  subgroup nr. 147; quality 5.035311698913574
+
+           slope: 3.185989509636586
+complement slope: 2.1550085547909066
+candidate Bsmt Full Bath = '0' size: 1707
+  subgroup nr. 148; quality 2.7060606479644775
+
+           slope: 3.104933969779974
+complement slope: 1.9150086894647367
+candidate Full Bath <= 1.0 size: 1330
+  subgroup nr. 150; quality 3.1882567405700684
+
+           slope: 1.9150086894647367
+complement slope: 3.104933969779974
+candidate Full Bath >= 2.0 size: 1600
+  subgroup nr. 153; quality 2.195247173309326
+
+           slope: 1.679861381512479
+complement slope: 5.996249825731013
+candidate Half Bath <= 0.0 size: 1843
+  subgroup nr. 154; quality 8.149782180786133
+
+           slope: 5.996249825731013
+complement slope: 1.679861381512479
+candidate Half Bath >= 1.0 size: 1087
+  subgroup nr. 156; quality 9.042940139770508
+
+           slope: 3.2405681591711644
+complement slope: 2.398426274552777
+candidate Bedroom AbvGr <= 2.0 size: 863
+  subgroup nr. 157; quality 1.803555965423584
+
+           slope: 2.3054347167397524
+complement slope: 3.345298921425845
+candidate Bedroom AbvGr <= 3.0 size: 2460
+  subgroup nr. 158; quality 1.8746042251586914
+
+           slope: 2.398426274552777
+complement slope: 3.2405681591711644
+candidate Bedroom AbvGr >= 3.0 size: 2067
+  subgroup nr. 161; quality 1.7794829607009888
+
+           slope: 3.345298921425845
+complement slope: 2.3054347167397524
+candidate Bedroom AbvGr >= 4.0 size: 470
+  subgroup nr. 162; quality 1.9459000825881958
+
+           slope: 1.5549395423887322
+complement slope: 3.7310563490576247
+candidate Kitchen Qual = 'TA' size: 1494
+  subgroup nr. 165; quality 4.886622428894043
+
+           slope: 2.7855754312384273
+complement slope: 2.6465020866431184
+candidate Kitchen Qual = 'Gd' size: 1160
+  subgroup nr. 166; quality 0.3821210265159607
+
+           slope: 1.9975839780044076
+complement slope: 2.2998688677268375
+candidate TotRms AbvGrd <= 5.0 size: 816
+  subgroup nr. 167; quality 0.799710750579834
+
+           slope: 2.361445554317741
+complement slope: 1.8182983192301987
+candidate TotRms AbvGrd <= 6.0 size: 1660
+  subgroup nr. 168; quality 1.4131625890731812
+
+           slope: 2.040182302492301
+complement slope: 2.3248066254489856
+candidate TotRms AbvGrd <= 7.0 size: 2309
+  subgroup nr. 169; quality 0.5405015349388123
+
+           slope: 2.2998688677268375
+complement slope: 1.9975839780044076
+candidate TotRms AbvGrd >= 6.0 size: 2114
+  subgroup nr. 172; quality 0.6533507704734802
+
+           slope: 1.8182983192301987
+complement slope: 2.361445554317741
+candidate TotRms AbvGrd >= 7.0 size: 1270
+  subgroup nr. 173; quality 1.2109029293060303
+
+           slope: 2.3248066254489856
+complement slope: 2.040182302492301
+candidate TotRms AbvGrd >= 8.0 size: 621
+  subgroup nr. 174; quality 0.579799234867096
+
+           slope: 2.3694770350810326
+complement slope: 1.8086727539822565
+candidate Fireplaces <= 0.0 size: 1422
+  subgroup nr. 176; quality 1.378555417060852
+
+           slope: 1.8086727539822565
+complement slope: 2.3694770350810326
+candidate Fireplaces >= 1.0 size: 1508
+  subgroup nr. 178; quality 0.9271336793899536
+
+           slope: 1.6197195230796304
+complement slope: 2.9793143444094494
+candidate Fireplace Qu = 'Gd' size: 744
+  subgroup nr. 179; quality 3.1288318634033203
+
+           slope: 2.3694770350810326
+complement slope: 1.8086727539822565
+candidate Fireplace Qu = 'nan' size: 1422
+  subgroup nr. 180; quality 1.378555417060852
+
+           slope: 1.4404450716627355
+complement slope: 3.098518042693942
+candidate Fireplace Qu = 'TA' size: 600
+  subgroup nr. 181; quality 4.481585502624512
+
+           slope: 1.7129880224047844
+complement slope: 5.1559680504948675
+candidate Garage Type = 'Attchd' size: 1731
+  subgroup nr. 182; quality 6.451979160308838
+
+           slope: 2.0198751164611815
+complement slope: 2.2360692702108484
+candidate Garage Type = 'Detchd' size: 782
+  subgroup nr. 183; quality 0.5377911925315857
+
+           slope: 2.0237144335926014
+complement slope: 2.577319699475382
+candidate Garage Finish = 'Fin' size: 728
+  subgroup nr. 184; quality 1.2215253114700317
+
+           slope: 2.6418183343334496
+complement slope: 2.381103724717944
+candidate Garage Finish = 'Unf' size: 1231
+  subgroup nr. 185; quality 0.7439525127410889
+
+           slope: 1.7106981627014726
+complement slope: 3.105474143258219
+candidate Garage Finish = 'RFn' size: 812
+  subgroup nr. 186; quality 3.806065320968628
+
+           slope: 2.529685347874421
+complement slope: 1.9523147778041323
+candidate Garage Cars <= 1.0 size: 936
+  subgroup nr. 187; quality 1.5057177543640137
+
+           slope: 1.6507903073455108
+complement slope: 4.328635420792106
+candidate Garage Cars <= 2.0 size: 2539
+  subgroup nr. 188; quality 1.8505632877349854
+
+           slope: 1.9523147778041323
+complement slope: 2.529685347874421
+candidate Garage Cars >= 2.0 size: 1994
+  subgroup nr. 191; quality 0.7609946131706238
+
+           slope: 4.328635420792106
+complement slope: 1.6507903073455108
+candidate Garage Cars >= 3.0 size: 391
+  subgroup nr. 192; quality 2.969724655151367
+
+           slope: 2.34947720598567
+complement slope: 6.9448375106629365
+candidate Garage Qual = 'TA' size: 2615
+  subgroup nr. 193; quality 4.5938720703125
+
+           slope: 2.208144352423679
+complement slope: 2.9293195841827893
+candidate Wood Deck SF <= 0.0 size: 1526
+  subgroup nr. 196; quality 1.825332760810852
+
+           slope: 2.3850377544390478
+complement slope: 2.4625259975475036
+candidate Wood Deck SF <= 120.0 size: 1873
+  subgroup nr. 197; quality 0.18133889138698578
+
+           slope: 2.4276659568626573
+complement slope: 2.2873603203182613
+candidate Wood Deck SF <= 168.0 size: 2221
+  subgroup nr. 198; quality 0.30334633588790894
+
+           slope: 2.7136112389896136
+complement slope: 1.9707097696955043
+candidate Wood Deck SF <= 235.0 size: 2565
+  subgroup nr. 199; quality 1.461677074432373
+
+           slope: 2.9293195841827893
+complement slope: 2.208144352423679
+candidate Wood Deck SF >= 4.0 size: 1404
+  subgroup nr. 200; quality 1.866803765296936
+
+           slope: 2.544745437836964
+complement slope: 2.3531140265815367
+candidate Wood Deck SF >= 120.0 size: 1110
+  subgroup nr. 201; quality 0.4698885381221771
+
+           slope: 2.264550521058675
+complement slope: 2.4029261997941225
+candidate Wood Deck SF >= 168.0 size: 765
+  subgroup nr. 202; quality 0.31723296642303467
+
+           slope: 1.9696750732534754
+complement slope: 2.7130573483143965
+candidate Wood Deck SF >= 235.0 size: 367
+  subgroup nr. 203; quality 1.5167282819747925
+
+           slope: 1.6229265407542588
+complement slope: 3.4395587406526724
+candidate Open Porch SF <= 0.0 size: 1300
+  subgroup nr. 204; quality 4.551385879516602
+
+           slope: 1.6551320544221446
+complement slope: 3.2994400504763868
+candidate Open Porch SF <= 27.0 size: 1472
+  subgroup nr. 205; quality 3.9819202423095703
+
+           slope: 2.07096908356092
+complement slope: 2.897478244758678
+candidate Open Porch SF <= 45.0 size: 1850
+  subgroup nr. 206; quality 1.8785290718078613
+
+           slope: 2.2903000628094525
+complement slope: 2.9861052424366923
+candidate Open Porch SF <= 70.0 size: 2204
+  subgroup nr. 207; quality 1.441861867904663
+
+           slope: 2.499736336471031
+complement slope: 3.3510831821549156
+candidate Open Porch SF <= 116.0 size: 2571
+  subgroup nr. 208; quality 1.1774414777755737
+
+           slope: 3.4395587406526724
+complement slope: 1.6229265407542588
+candidate Open Porch SF >= 4.0 size: 1630
+  subgroup nr. 209; quality 4.6754374504089355
+
+           slope: 3.333252510472062
+complement slope: 1.635301734230569
+candidate Open Porch SF >= 27.0 size: 1468
+  subgroup nr. 210; quality 4.29074239730835
+
+           slope: 2.9174862727454935
+complement slope: 2.0440501355887277
+candidate Open Porch SF >= 45.0 size: 1108
+  subgroup nr. 211; quality 2.0964653491973877
+
+           slope: 2.977274106882557
+complement slope: 2.288764902003416
+candidate Open Porch SF >= 70.0 size: 741
+  subgroup nr. 212; quality 1.532560110092163
+
+           slope: 3.406269740045313
+complement slope: 2.4931995299477028
+candidate Open Porch SF >= 116.0 size: 369
+  subgroup nr. 213; quality 1.3843271732330322
+
+           slope: 2.5593855926346647
+complement slope: 4.117564489786233
+candidate Enclosed Porch <= 0.0 size: 2471
+  subgroup nr. 214; quality 2.3221232891082764
+
+           slope: 2.589738834405352
+complement slope: 4.74113163367398
+candidate Enclosed Porch <= 77.0 size: 2564
+  subgroup nr. 215; quality 2.85739803314209
+
+           slope: 4.117564489786233
+complement slope: 2.5593855926346647
+candidate Enclosed Porch >= 16.0 size: 459
+  subgroup nr. 216; quality 2.809138298034668
+
+           slope: 4.768350364188623
+complement slope: 2.5841348815983904
+candidate Enclosed Porch >= 77.0 size: 370
+  subgroup nr. 217; quality 3.6137421131134033
+
+           slope: 2.4638247008006613
+complement slope: 6.430171240106895
+candidate Fence = 'nan' size: 2358
+  subgroup nr. 222; quality 5.437325477600098
+
+           slope: 7.908687446628986
+complement slope: 2.550106318706095
+candidate Fence = 'MnPrv' size: 330
+  subgroup nr. 223; quality 6.0662617683410645
+
+           slope: 3.7426719097172274
+complement slope: 2.589434323176763
+candidate Mo Sold <= 3.0 size: 488
+  subgroup nr. 226; quality 1.7252694368362427
+
+           slope: 4.410096537477196
+complement slope: 2.4473432195863345
+candidate Mo Sold <= 4.0 size: 767
+  subgroup nr. 227; quality 3.5948455333709717
+
+           slope: 4.733765397363582
+complement slope: 2.2638897142672465
+candidate Mo Sold <= 5.0 size: 1162
+  subgroup nr. 228; quality 5.2846455574035645
+
+           slope: 2.4370437337871436
+complement slope: 3.2764592995799493
+candidate Mo Sold <= 6.0 size: 1667
+  subgroup nr. 229; quality 2.126319169998169
+
+           slope: 2.8139105257245083
+complement slope: 2.3717213231465797
+candidate Mo Sold <= 7.0 size: 2116
+  subgroup nr. 230; quality 1.048532485961914
+
+           slope: 2.533467820708434
+complement slope: 4.086311782851228
+candidate Mo Sold <= 8.0 size: 2349
+  subgroup nr. 231; quality 2.5932042598724365
+
+           slope: 2.589434323176763
+complement slope: 3.7426719097172274
+candidate Mo Sold >= 4.0 size: 2442
+  subgroup nr. 234; quality 1.7210500240325928
+
+           slope: 2.4473432195863345
+complement slope: 4.410096537477196
+candidate Mo Sold >= 5.0 size: 2163
+  subgroup nr. 235; quality 3.568748950958252
+
+           slope: 2.2638897142672465
+complement slope: 4.733765397363582
+candidate Mo Sold >= 6.0 size: 1768
+  subgroup nr. 236; quality 5.243825912475586
+
+           slope: 3.2764592995799493
+complement slope: 2.4370437337871436
+candidate Mo Sold >= 7.0 size: 1263
+  subgroup nr. 237; quality 2.131514072418213
+
+           slope: 2.3717213231465797
+complement slope: 2.8139105257245083
+candidate Mo Sold >= 8.0 size: 814
+  subgroup nr. 238; quality 1.0508710145950317
+
+           slope: 3.3416542823892423
+complement slope: 2.6418937844948664
+candidate Mo Sold >= 10.0 size: 420
+  subgroup nr. 239; quality 1.0719876289367676
+
+           slope: 5.861841266923704
+complement slope: 2.2840973888451
+candidate Yr Sold <= 2006.0 size: 625
+  subgroup nr. 240; quality 6.436633110046387
+
+           slope: 3.2906154228948323
+complement slope: 2.2873670072565324
+candidate Yr Sold <= 2007.0 size: 1319
+  subgroup nr. 241; quality 2.7079615592956543
+
+           slope: 2.64893504048702
+complement slope: 2.7924595124641307
+candidate Yr Sold <= 2008.0 size: 1941
+  subgroup nr. 242; quality 0.38073545694351196
+
+           slope: 2.544247539104036
+complement slope: 5.381893740911218
+candidate Yr Sold <= 2009.0 size: 2589
+  subgroup nr. 243; quality 3.810598134994507
+
+           slope: 2.2840973888451
+complement slope: 5.861841266923704
+candidate Yr Sold >= 2007.0 size: 2305
+  subgroup nr. 244; quality 6.285492420196533
+
+           slope: 2.2873670072565324
+complement slope: 3.2906154228948323
+candidate Yr Sold >= 2008.0 size: 1611
+  subgroup nr. 245; quality 2.7056121826171875
+
+           slope: 2.7924595124641307
+complement slope: 2.64893504048702
+candidate Yr Sold >= 2009.0 size: 989
+  subgroup nr. 246; quality 0.38082054257392883
+
+           slope: 2.4357143948559923
+complement slope: 5.965807042956948
+candidate Sale Type = 'WD ' size: 2536
+  subgroup nr. 247; quality 3.32633113861084
+
+           slope: 2.3743924947114685
+complement slope: 5.243250079988991
+candidate Sale Condition = 'Normal' size: 2413
+  subgroup nr. 248; quality 3.4906084537506104
+Raw result set size: 209
+Filtered result set size: 145
+Mining process finished in 0 minutes and 0.060 seconds.
+   145 subgroups found.
+
+number of candidates: 249
+number of subgroups : 145
+CCSUM=12038	N=2930	CCEXPECTED=4.108532	CR(10)=0.428582	H(10)=5.928300
+CCSUM=144183	N=2930	CCEXPECTED=49.209215	CR(100)=0.056699	H(100)=11.509176
+Depth                                1
+Coverage                          1026
+Quality                       12.05652
+Slope                         10.05591
+Intercept                116581.769325
+p-Value                            NaN
+Conditions    Exterior 1st = 'VinylSd'
+Name: 0, dtype: object
+
+Process finished with exit code 0
