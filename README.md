@@ -1,7 +1,7 @@
-# Subgroup Discovery and Regression Analysis
+# Subgroup Discovery and Regression Analysis for Classification and Prediction
 This project uses the pySubDisc package for Subgroup Discovery (SD) and Regression tasks. It applies Subgroup Discovery to the Adult dataset for classification, and explores the relationship between Lot Area and SalePrice using double regression with the Ames Housing dataset.
 
-# Subgroup Discovery and Regression Analysis
+# Subgroup Discovery and Regression Analysis for Classification and Prediction
 
 This project applies **Subgroup Discovery (SD)** and **Regression** techniques to analyze datasets using the **pySubDisc** package. It includes subgroup discovery tasks on the **Adult dataset** for classification and a regression analysis on the **Ames Housing dataset** to examine the relationship between lot area and sale price.
 
